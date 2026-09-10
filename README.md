@@ -18,7 +18,6 @@
   </a>
 </div>
 <br />
-<img width="1901" height="918" alt="Screenshot 2026-08-19 223024" src="https://github.com/user-attachments/assets/84b1e036-f2d8-44ca-84c7-507dd0371f7c" />
 
 <br />
 <br />
@@ -42,6 +41,42 @@
 ## 🌒 Moonshots Level 1 → 3 — Requirements & Submission Checklist
 ## 🌐 Live Demo
 [https://nexora-app-web3.vercel.app/](https://nexora-app-web3.vercel.app/)
+## 📱 Nexora in Action
+
+<table align="center" >
+  <tr>
+    <td align="center">
+      <img
+    src="https://github.com/user-attachments/assets/94e9841b-ebca-4c73-8b6c-9c245eca5193" 
+        alt="Nexora Demo 1"
+        width="220"
+        hspace="15"
+      />
+    </td>
+    <td align="center">
+      <img
+        src="https://github.com/user-attachments/assets/bbdd79cb-7304-41a5-ad67-35503ce33e68"
+        alt="Nexora Demo 2"
+        width="220"
+        hspace="15"
+      />
+    </td>
+    <td align="center">
+      <img
+        src="https://github.com/user-attachments/assets/7768ee3a-3e6a-42ad-92d6-b39af8bce000"
+        alt="Nexora Demo 3"
+        width="220"
+        hspace="15"
+      />
+    </td>
+  </tr>
+</table>
+
+## 𝕏 Follow Nexora
+
+Follow **Nexora** on X for product updates, Midnight development progress, privacy insights, and Preprod releases.
+
+👉 **[Follow @NexoraWeb3x on X](https://x.com/NexoraWeb3x/)**
 
 ## **Demo Video** [Watch the Nexora Demo Video on Google Drive](https://drive.google.com/file/d/1cAb_dis5CkSjRz4XW3x5RSnGYpUv2BDh/view?usp=sharing)
 ---
@@ -49,6 +84,7 @@
 ## 📋 Quick Links & CheckList
 | Network     | Address                                                              |
 | ----------- | -------------------------------------------------------------------- |
+| 𝕏 **X / Twitter** | [@NexoraWeb3x](https://x.com/NexoraWeb3x/) |
 | **🌐Live Demo** | [https://nexora-app-web3.vercel.app/](https://nexora-app-web3.vercel.app/) |
 | **Preprod** | `0x85c6d5ce4fec74c33a17d4307290bf7d05878637b9f2e70bead1d90bdf5353cc` |
 | **Demo Video** |[Watch the Nexora Demo Video on Google Drive](https://drive.google.com/file/d/1cAb_dis5CkSjRz4XW3x5RSnGYpUv2BDh/view?usp=sharing) |
