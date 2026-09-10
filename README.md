@@ -42,20 +42,21 @@
 ## 🌐 Live Demo
 [https://nexora-app-web3.vercel.app/](https://nexora-app-web3.vercel.app/)
 ## 📱 Nexora in Action
+<img width="739" height="1600" alt="WhatsApp Image 2026-09-11 at 2 12 55 AM" src="" />
 
 <table align="center" >
   <tr>
     <td align="center">
       <img
-    src="https://github.com/user-attachments/assets/94e9841b-ebca-4c73-8b6c-9c245eca5193" 
+    src="https://github.com/user-attachments/assets/4adc0065-2b17-498d-8832-798b6834fa65" 
         alt="Nexora Demo 1"
         width="220"
         hspace="15"
       />
     </td>
-    <td align="center">
-      <img
-        src="https://github.com/user-attachments/assets/bbdd79cb-7304-41a5-ad67-35503ce33e68"
+    <td align="center"> 
+      <img 
+        src="https://github.com/user-attachments/assets/ed33dc2a-6561-47f1-a32d-c20e438be101"
         alt="Nexora Demo 2"
         width="220"
         hspace="15"
@@ -63,7 +64,7 @@
     </td>
     <td align="center">
       <img
-        src="https://github.com/user-attachments/assets/7768ee3a-3e6a-42ad-92d6-b39af8bce000"
+        src="https://github.com/user-attachments/assets/26e848fb-3064-4433-b7bf-cc06fed25ca7"
         alt="Nexora Demo 3"
         width="220"
         hspace="15"
