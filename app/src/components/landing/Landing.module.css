@@ -3,7 +3,8 @@
 /* ==================================================
    NEXORA CORE THEME VARIABLES
    ================================================== */
-:root {
+/* Base Landing Shell */
+.landingShell {
   --nx-base: #08061A;
   --nx-dark-1: #0D0A20;
   --nx-dark-2: #111022;
@@ -19,10 +20,7 @@
   --nx-font-main: "Space Grotesk", -apple-system, BlinkMacSystemFont, sans-serif;
   --nx-font-display: "Syne", sans-serif;
   --nx-font-body: "Inter", sans-serif;
-}
 
-/* Base Landing Shell */
-.landingShell {
   position: relative;
   width: 100%;
   min-height: 100vh;
