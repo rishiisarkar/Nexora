@@ -26,7 +26,7 @@
 
 * 💻 **Public GitHub Repository:** https://github.com/rishiisarkar/Nexora *(Complete open-source Nexora implementation with updated documentation)*
 
-* ⛓️ **Midnight Preprod Contract:** `0x85c6d5ce4fec74c33a17d4307290bf7d05878637b9f2e70bead1d90bdf5353cc`
+* ⛓️ **Midnight Preprod Contract:** `0xf36db0fda42e4c3b474bdd06fc72725670ab3ebb8e089f9923bf83ab855b454e`
 
 * 🔍 **Preprod Contract Explorer:** [View Nexora on Midnight Preprod Explorer](https://preprod.midnightexplorer.com/contracts/85c6d5ce4fec74c33a17d4307290bf7d05878637b9f2e70bead1d90bdf5353cc) *(Publicly verifiable contract deployment)*
 
@@ -63,16 +63,20 @@
 
 ---
 
-## Documentation
+## 📚 Documentation
 
-| Document | Description |
-|----------|-------------|
-| [README.md](./README.md) | Complete and concise project overview |
-| [ARCHITECTURE.md](./Documents/Architecture.md) | System architecture, project structure, and implementation details |
-| [PROPOSAL.md](./Documents/PROPOSAL.md) | Product proposal and Zero Knowledge solution overview |
-| [PLAN.md](./Documents/PLAN.md) | Development roadmap and implementation plan |
-| [midnight_level3_privora_plan.md](./Documents/midnight_level3_privora_plan.md) | Original Level 3 project planning and design document |
-| [TRUST_MODEL.md](./Documents/TRUST_MODEL.md) | Privacy model, trust assumptions, and security boundaries |
+| Document                                                           | Description                                                                              |
+| ------------------------------------------------------------------ | ---------------------------------------------------------------------------------------- |
+| [README.md](./README.md)                                           | Complete project overview, features, setup, architecture, and deployment information     |
+| [Architecture.md](./Architecture.md)                               | System architecture, project structure, components, and implementation details           |
+| [FEEDBACK.md](./FEEDBACK.md)                                       | User testing feedback, ratings, issues, suggestions, and documented feedback loop        |
+| [LAUNCH_USERS.md](./LAUNCH_USERS.md)                               | Launch user information and Midnight Preprod user onboarding evidence                    |
+| [PLAN.md](./PLAN.md)                                               | Development roadmap, milestones, and implementation plan                                 |
+| [PROPOSAL.md](./PROPOSAL.md)                                       | Product proposal and Zero-Knowledge solution overview                                    |
+| [TRUST_MODEL.md](./TRUST_MODEL.md)                                 | Privacy model, trust assumptions, security boundaries, and threat considerations         |
+| [USERS.md](./USERS.md)                                             | Midnight Preprod user wallet addresses and verification evidence                         |
+| [midnight_level6_Nexora_plan.md](./midnight_level6_Nexora_plan.md) | Level 6 Nexora planning, requirements, implementation progress, and submission checklist |
+
 ---
 
 ## Level 6 Users
@@ -141,7 +145,7 @@ Follow **Nexora** on X for product updates, Midnight development progress, priva
 | ----------- | -------------------------------------------------------------------- |
 | 𝕏 **X / Twitter** | [@NexoraWeb3x](https://x.com/NexoraWeb3x/) |
 | **🌐Live Demo** | [https://nexora-app-web3.vercel.app/](https://nexora-app-web3.vercel.app/) |
-| **Preprod** | `0x85c6d5ce4fec74c33a17d4307290bf7d05878637b9f2e70bead1d90bdf5353cc` |
+| **Preprod** | `0xf36db0fda42e4c3b474bdd06fc72725670ab3ebb8e089f9923bf83ab855b454e` |
 | **Demo Video** |[Watch the Nexora Demo Video on Google Drive](https://drive.google.com/file/d/1cAb_dis5CkSjRz4XW3x5RSnGYpUv2BDh/view?usp=sharing) |
 | CI/CD pipeline running (workflow file + passing runs)                 |               ✅ **Passed**                |
 
@@ -153,7 +157,7 @@ Follow **Nexora** on X for product updates, Midnight development progress, priva
 | Resource | Link                                                                                                                                                                        |
 | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Explorer | [Midnight Preprod Explorer](https://preprod.midnightexplorer.com/contracts/85c6d5ce4fec74c33a17d4307290bf7d05878637b9f2e70bead1d90bdf5353cc)                                                                                                        |
-| Contract | [0x85c6d5ce4fec74c33a17d4307290bf7d05878637b9f2e70bead1d90bdf5353cc](https://preprod.midnightexplorer.com/contracts/4c8d8bc1f4ebffa14661465644c523c994a1367bfd0e043a09eca46f96fb7d79) |
+| Contract | [0xf36db0fda42e4c3b474bdd06fc72725670ab3ebb8e089f9923bf83ab855b454e](https://preprod.midnightexplorer.com/contracts/f36db0fda42e4c3b474bdd06fc72725670ab3ebb8e089f9923bf83ab855b454e) |
 
 # 🏆 Nexora — Level 6 Requirements & Submission Checklist
 
@@ -177,7 +181,7 @@ Follow **Nexora** on X for product updates, Midnight development progress, priva
 | ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- | :--------------: |
 | **Public GitHub repository with updated documentation** | https://github.com/rishiisarkar/Nexora                                                                               | 🟢 **Completed** |
 | **Live demo link**                                      | https://nexora-app-web3.vercel.app/                                                                                  | 🟢 **Completed** |
-| **Midnight Preprod contract address**                   | `0x85c6d5ce4fec74c33a17d4307290bf7d05878637b9f2e70bead1d90bdf5353cc`                                                 | 🟢 **Completed** |
+| **Midnight Preprod contract address**                   | `0xf36db0fda42e4c3b474bdd06fc72725670ab3ebb8e089f9923bf83ab855b454e`                                                 | 🟢 **Completed** |
 | **Verifiable Preprod deployment**                       | https://preprod.midnightexplorer.com/contracts/85c6d5ce4fec74c33a17d4307290bf7d05878637b9f2e70bead1d90bdf5353cc      | 🟢 **Completed** |
 | **70 Preprod user wallet addresses**                    | 70+ Midnight Preprod tester wallets with verifiable on-chain activity                                                | 🟢 **Completed** |
 | **Feedback documentation / feedback link**              | Feedback Form: https://forms.gle/ShbFDAme1TiP7FRYA                                                                   | 🟢 **Completed** |
@@ -210,7 +214,8 @@ Follow **Nexora** on X for product updates, Midnight development progress, priva
 <img width="486" height="169" alt="Screenshot 2026-07-22 123954" src="https://github.com/user-attachments/assets/b71b9cdb-8fc5-46d3-9a80-b390b3c44db1" />
 
 ### 2. Deployed on Prepod Network
-<img width="1815" height="911" alt="image" src="https://github.com/user-attachments/assets/0b105701-ff92-40b1-bdfa-ec4c75c5c06e" />
+<img width="1795" height="926" alt="Screenshot 2026-09-25 215511" src="https://github.com/user-attachments/assets/1c526db3-5981-48ee-a7c2-c7d975d7b916" />
+
 
 
 
