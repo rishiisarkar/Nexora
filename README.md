@@ -30,7 +30,7 @@
 
 * ⛓️ **Midnight Preprod Contract:** `0xf36db0fda42e4c3b474bdd06fc72725670ab3ebb8e089f9923bf83ab855b454e`
 
-* 🔍 **Preprod Contract Explorer:** [View Nexora on Midnight Preprod Explorer](https://preprod.midnightexplorer.com/contracts/85c6d5ce4fec74c33a17d4307290bf7d05878637b9f2e70bead1d90bdf5353cc) *(Publicly verifiable contract deployment)*
+* 🔍 **Preprod Contract Explorer:** [View Nexora on Midnight Preprod Explorer](https://preprod.midnightexplorer.com/contracts/f36db0fda42e4c3b474bdd06fc72725670ab3ebb8e089f9923bf83ab855b454e) *(Publicly verifiable contract deployment)*
 
 * 🐦 **Official Product X Handle:** [@NexoraWeb3x](https://x.com/NexoraWeb3x/) *(Official Nexora profile for product updates, Midnight development progress, privacy-focused content, and community outreach)*
 
