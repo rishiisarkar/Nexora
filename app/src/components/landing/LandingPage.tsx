@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, ChevronRight, Cpu, Globe, Lock, Shield, Sparkles, Terminal } from "lucide-react";
+import { ArrowRight, ChevronRight, Terminal } from "lucide-react";
 import { LandingNavbar } from "./LandingNavbar";
 import { HeroVisual } from "./HeroVisual";
 import { ProblemComparison } from "./ProblemComparison";
@@ -21,84 +21,95 @@ import { LandingFooter } from "./LandingFooter";
 import styles from "./Landing.module.css";
 
 const ecosystemItems = [
-  { name: "Midnight Preprod", tag: "Layer 1 Privacy" },
-  { name: "Compact DSL", tag: "ZK Smart Contracts" },
-  { name: "zk-SNARKs", tag: "Zero-Knowledge Engine" },
-  { name: "Lace Wallet", tag: "Midnight Connector" },
-  { name: "1AM Wallet", tag: "Shielded Key Store" },
-  { name: "Apache-2.0", tag: "Open Source Protocol" },
+  { name: "Midnight", glyph: "◐" },
+  { name: "Compact DSL", glyph: "◈" },
+  { name: "zk-SNARKs", glyph: "π" },
+  { name: "Lace Wallet", glyph: "◇" },
+  { name: "1AM Wallet", glyph: "⏱" },
+  { name: "Preprod", glyph: "◎" },
+  { name: "Apache-2.0", glyph: "§" },
 ];
 
 export function LandingPage() {
   return (
     <div className={styles.landingShell}>
-      {/* Precision Cryptographic Ambient Grid & Noise Layer */}
-      <div className={styles.ambientNoiseGrid} aria-hidden="true" />
-      <div className={styles.celestialLightRay} aria-hidden="true" />
-      <div className={styles.subtleRadialGlow} aria-hidden="true" />
+      {/* Precision Ambient Film Grain */}
+      <div className={styles.somaGrainLayer} aria-hidden="true" />
 
       {/* Navigation */}
       <LandingNavbar />
 
       <main className={styles.mainContent}>
-        {/* HERO SECTION */}
-        <section className={styles.heroSection}>
-          <div className={styles.heroContainer}>
-            {/* Top Status Capsule */}
-            <div className={styles.heroBadgeCapsule}>
-              <span className={styles.pulseDotGreen} />
-              <span className={styles.badgeCategory}>MIDNIGHT PREPROD</span>
-              <span className={styles.badgeDivider}>/</span>
-              <span className={styles.badgeText}>COMPACT ZK ACCESS CONTROL</span>
-            </div>
+        {/* HERO SECTION - REPLICA OF THE SOMA AESTHETIC */}
+        <section className={styles.somaHeroSection}>
+          {/* Ethereal diagonal light leak & lens flare at top-right */}
+          <div className={styles.somaLightLeakBeam} aria-hidden="true" />
+          <div className={styles.somaLightLeakCore} aria-hidden="true" />
+          <div className={styles.somaStardustParticles} aria-hidden="true" />
 
-            {/* Giant Hero Headline */}
-            <h1 className={styles.heroHeadline}>
+          <div className={styles.somaHeroContent}>
+            {/* Small uppercase eyebrow */}
+            <p className={styles.somaEyebrow}>
+              POWERED BY MIDNIGHT &amp; COMPACT ZK-SNARK™
+            </p>
+
+            {/* Headline */}
+            <h1 className={styles.somaHeadline}>
               Prove permission.<br />
-              <span className={styles.headlineHighlight}>Not identity.</span>
+              Not identity.
             </h1>
 
-            {/* Supporting Subtitle */}
-            <p className={styles.heroSubtitle}>
+            {/* Supporting Copy */}
+            <p className={styles.somaSubtitle}>
               Nexora enables privacy-preserving credential verification with zero-knowledge proofs &mdash; letting users prove what they qualify for without exposing unnecessary personal information.
             </p>
 
-            {/* Hero CTAs */}
-            <div className={styles.heroCtasRow}>
-              <Link href="/gate" className={styles.heroPrimaryBtn}>
-                <span>Launch Nexora</span>
-                <ArrowRight size={16} />
+            {/* Dual Pill Action Buttons */}
+            <div className={styles.somaButtonsRow}>
+              <Link href="/gate" className={styles.somaPrimaryBtn}>
+                <span className={styles.somaBtnTextBlack}>Launch Nexora</span>
+                <span className={styles.somaBtnArrowBlack}>&rarr;</span>
               </Link>
-              <a href="#how-it-works" className={styles.heroSecondaryBtn}>
-                <span>Explore How It Works</span>
+              <a href="#how-it-works" className={styles.somaSecondaryBtn}>
+                <span>How it works</span>
+                <span className={styles.somaBtnArrowWhite}>&rarr;</span>
               </a>
-              <Link href="/admin" className={styles.heroOperatorLink}>
-                <Terminal size={14} />
-                <span>Operator Console</span>
-                <ChevronRight size={13} />
+              <Link href="/admin" className={styles.somaConsoleLink}>
+                <Terminal size={13} />
+                <span>Console</span>
+                <ChevronRight size={12} />
               </Link>
             </div>
 
-            {/* Custom Interactive Cryptographic Visual */}
-            <div className={styles.heroVisualWrapper}>
-              <HeroVisual />
-            </div>
-          </div>
-        </section>
+            {/* Works with Tools / Infrastructure strip */}
+            <div className={styles.somaToolsBlock}>
+              <div className={styles.somaToolsDivider}>
+                <span className={styles.hairlineLeft} />
+                <span className={styles.dividerCaption}>BUILT WITH PRIVACY-FIRST INFRASTRUCTURE</span>
+                <span className={styles.hairlineRight} />
+              </div>
 
-        {/* TRUST & ECOSYSTEM BAR */}
-        <section className={styles.trustBarSection}>
-          <div className={styles.trustBarContainer}>
-            <span className={styles.trustBarLabel}>
-              BUILT FOR PRIVATE VERIFICATION ON MIDNIGHT
-            </span>
-            <div className={styles.trustEcosystemGrid}>
-              {ecosystemItems.map((eco) => (
-                <div key={eco.name} className={styles.trustItem}>
-                  <strong className={styles.trustItemName}>{eco.name}</strong>
-                  <span className={styles.trustItemTag}>{eco.tag}</span>
-                </div>
-              ))}
+              <div className={styles.somaLogosRow}>
+                {ecosystemItems.map((item) => (
+                  <div key={item.name} className={styles.somaLogoItem}>
+                    <span className={styles.somaGlyph}>{item.glyph}</span>
+                    <span className={styles.somaLogoName}>{item.name}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Product Card Peek at Bottom with Carousel Indicators */}
+            <div className={styles.somaCardPeekWrapper}>
+              <div className={styles.somaCarouselIndicators}>
+                <span className={`${styles.carouselIndicator} ${styles.carouselIndicatorActive}`} />
+                <span className={styles.carouselIndicator} />
+                <span className={styles.carouselIndicator} />
+              </div>
+
+              <div className={styles.somaProductCardFrame}>
+                <HeroVisual />
+              </div>
             </div>
           </div>
         </section>
