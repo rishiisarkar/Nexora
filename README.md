@@ -119,19 +119,56 @@ Follow **Nexora** on X for product updates, Midnight development progress, priva
 | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Explorer | [Midnight Preprod Explorer](https://preprod.midnightexplorer.com/contracts/85c6d5ce4fec74c33a17d4307290bf7d05878637b9f2e70bead1d90bdf5353cc)                                                                                                        |
 | Contract | [0x85c6d5ce4fec74c33a17d4307290bf7d05878637b9f2e70bead1d90bdf5353cc](https://preprod.midnightexplorer.com/contracts/4c8d8bc1f4ebffa14661465644c523c994a1367bfd0e043a09eca46f96fb7d79) |
-### 🌓 Level 3 — First Quarter
 
-**Chosen Idea:** _Private Allowlist Access_ — prove membership without revealing identity.
+# 🏆 Nexora — Level 6 Requirements & Submission Checklist
 
-| Requirement                                                           |                   Status                   |
-| --------------------------------------------------------------------- | :----------------------------------------: |
-| Fully functional dApp that meaningfully uses Midnight's privacy model |               ✅ **Passed**                |
-| Minimum 3 tests passing                                               |  ✅ **Passed**   |
-| CI/CD pipeline running (workflow file + passing runs)                 |               ✅ **Passed**                |
-| Approved idea submitted from the provided idea list                   | ✅ **Passed** — _Private Allowlist Access_ |
-| Minimum 10 meaningful commits                                         |               ✅ **Passed**                |
+## **Requirements to Pass**
 
+| Requirement                         | Nexora Implementation / Evidence                                                                                                                                                                                                        |      Status      |
+| ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------: |
+| **Same MVP from Level 5, extended** | Nexora's complete privacy-preserving access gateway with Admin Gate Creation, Credential Enrollment, Merkle Membership Verification, ZK Proof Generation, Nullifier Replay Protection, Wallet Integration, and Protected Session Unlock | 🟢 **Completed** |
+| **70 Preprod users**                | 70+ verifiable Midnight Preprod user wallet addresses with on-chain activity                                                                                                                                                            | 🟢 **Completed** |
+| **Feedback loop documented**        | User feedback collected through the official Nexora feedback form and documented through the linked Google Sheets response tracker                                                                                                      | 🟢 **Completed** |
+| **Updated documentation**           | Updated README and project documentation covering setup, architecture, privacy model, wallet integration, ZK verification, Preprod deployment, user flow, and troubleshooting                                                           | 🟢 **Completed** |
+| **Live Preprod deployment**         | Nexora deployed and operational on Midnight Preprod with a publicly verifiable contract address                                                                                                                                         | 🟢 **Completed** |
+| **Minimum 20 meaningful commits**   | Nexora repository contains continued development history with significantly more than the required commit count                                                                                                                         | 🟢 **Completed** |
+| **Complete MVP functionality**      | Full Admin → Credential → ZK Proof → Midnight Verification → Access Grant flow implemented and demonstrated                                                                                                                             | 🟢 **Completed** |
 
+---
+
+# 📋 Submission Checklist
+
+| Submission Requirement                                  | Nexora Submission                                                                                                    |      Status      |
+| ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- | :--------------: |
+| **Public GitHub repository with updated documentation** | https://github.com/rishiisarkar/Nexora                                                                               | 🟢 **Completed** |
+| **Live demo link**                                      | https://nexora-app-web3.vercel.app/                                                                                  | 🟢 **Completed** |
+| **Midnight Preprod contract address**                   | `0x85c6d5ce4fec74c33a17d4307290bf7d05878637b9f2e70bead1d90bdf5353cc`                                                 | 🟢 **Completed** |
+| **Verifiable Preprod deployment**                       | https://preprod.midnightexplorer.com/contracts/85c6d5ce4fec74c33a17d4307290bf7d05878637b9f2e70bead1d90bdf5353cc      | 🟢 **Completed** |
+| **70 Preprod user wallet addresses**                    | 70+ Midnight Preprod tester wallets with verifiable on-chain activity                                                | 🟢 **Completed** |
+| **Feedback documentation / feedback link**              | Feedback Form: https://forms.gle/ShbFDAme1TiP7FRYA                                                                   | 🟢 **Completed** |
+| **Feedback response data**                              | Google Sheets: https://docs.google.com/spreadsheets/d/15vLOWZlfbG9BFbDRfPmD1uYHZlk1dcgLbbNT8eNDcPQ/edit?usp=sharing  | 🟢 **Completed** |
+| **Documented feedback loop**                            | Tester feedback → issue identification → UX / functionality improvements → iteration                                 | 🟢 **Completed** |
+| **Updated project documentation**                       | README, architecture, privacy model, setup, wallet flow, ZK verification, Preprod deployment and usage documentation | 🟢 **Completed** |
+| **Demo video showing full MVP functionality**           | https://drive.google.com/file/d/1cAb_dis5CkSjRz4XW3x5RSnGYpUv2BDh/view?usp=sharing                                   | 🟢 **Completed** |
+| **Official product X account**                          | https://x.com/NexoraWeb3x/                                                                                           | 🟢 **Completed** |
+| **Minimum 30 meaningful commits**                       | Continuous development and iteration documented in the public GitHub repository                                      | 🟢 **Completed** |
+| **CI/CD pipeline**                                      | Automated CI/CD workflow configured with passing runs                                                                | 🟢 **Completed** |
+| **End-to-end ZK verification**                          | Client-side proof generation → Merkle membership verification → nullifier validation → access granted                | 🟢 **Completed** |
+| **Replay protection**                                   | Unique nullifier generated and tracked to prevent reuse of previously verified credentials                           | 🟢 **Completed** |
+| **Privacy-preserving credential verification**          | Raw credential, Merkle path, and private witness values remain outside public contract state                         | 🟢 **Completed** |
+| **Multi-wallet support**                                | Lace and 1AM wallet connection supported for Nexora member verification                                              | 🟢 **Completed** |
+| **Preprod explorer verification**                       | Contract deployment and transactions can be independently inspected through Midnight Preprod Explorer                | 🟢 **Completed** |
+
+## 🎯 Level 6 Completion Status
+
+| Level       |            Status           |
+| ----------- | :-------------------------: |
+| **Level 1** |       🟢 **Completed**      |
+| **Level 2** |       🟢 **Completed**      |
+| **Level 3** |       🟢 **Completed**      |
+| **Level 4** |       🟢 **Completed**      |
+| **Level 5** |       🟢 **Completed**      |
+| **Level 6** | 🟢 **Completed** |
 
 ### 1. Automated Test Suite Passing
 
@@ -145,54 +182,6 @@ Follow **Nexora** on X for product updates, Midnight development progress, priva
 ### 3. CI & CD Running 
 <img width="1915" height="658" alt="Screenshot 2026-08-19 223155" src="https://github.com/user-attachments/assets/235632aa-710e-4ac8-9b63-af10c8cc1901" />
 
-
-### 4. Commit Over 30 meaningful commits   ✅ **Passed**  
-
-**Submission Checklist**
-
-- [x] Public GitHub repository with complete README
-- [x] Live demo link
-- [x] Screenshot: test output (3+ tests passing)
-- [x] CI/CD badge or workflow file with passing runs
-- [x] Demo video (1 minute) showing full functionality
-- [x] README "privacy model" section: what an observer can and cannot learn
-- [x] Product proposal (from the idea list) submitted for approval
-- [x] Minimum 10 meaningful commits
-
----
-
-### 🌒 Level 2 — Waxing Crescent
-
-| Requirement                                                           |                                                                                                  Status                                                                                                   |
-| --------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| Lace wallet connect / disconnect implemented                          |                                                                      ✅ **Passed** — Browser DApp Connector API, Lace & 1AM support                                                                       |
-| Circuit called successfully from the frontend                         |                                                         ✅ **Passed** — `verify_access()` runs in local ZK prover, broadcast via contract wrapper                                                         |
-| An observable privacy behavior (something proven without being shown) |                                                ✅ **Passed** — Merkle membership + nullifier check proven locally without revealing the secret credential                                                 |
-| Contract deployed to Preprod with a verifiable address | [0x85c6d5ce4fec74c33a17d4307290bf7d05878637b9f2e70bead1d90bdf5353cc](https://preprod.midnightexplorer.com/contracts/4c8d8bc1f4ebffa14661465644c523c994a1367bfd0e043a09eca46f96fb7d79)|
-| Minimum 8 meaningful commits                                          |                                                                                               ✅ **Passed**                                                                                               |
-
-## 🎬 Demo-Video
-
-[Watch the Nexora Demo Video on Google Drive](https://drive.google.com/file/d/1cAb_dis5CkSjRz4XW3x5RSnGYpUv2BDh/view?usp=sharing)
-
-### What to Record (Under 2 Minutes)
-
-1. **Connect Lace wallet** — show the address appear on screen
-2. **Admin flow** — deploy a gate and enroll a credential hash
-3. **Navigate to Member Access page** — show the Public vs Private comparison
-4. **Click "Generate Proof"** — show the loading state during ZK proof generation
-5. **Show the on-chain result** — transaction hash and "Proved without revealing your input" label
-6. **Point out** that the raw secret credential was never shown in the UI or sent to the chain
-7. **Disconnect wallet** — show the UI reset to disconnected state
-
-**Submission Checklist**
-
-- [x] Public GitHub repository with README
-- [x] Live demo link (Vercel, Netlify, or similar)
-- [x] Deployed Preprod contract address 
-- [x] Demo video: wallet connect + a successful circuit call
-- [x] README documenting the privacy claim
-- [x] Minimum 8 meaningful commits
 
 ---
 
