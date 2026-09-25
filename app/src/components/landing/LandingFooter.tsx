@@ -1,41 +1,138 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { ArrowUpRight, ExternalLink, Globe, Shield } from "lucide-react";
 import styles from "./Landing.module.css";
 
 export function LandingFooter() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
-    <footer className={styles.footer}>
-      <div className={styles.footerGrid}>
-        <div className={styles.footerBrand}>
-          <Link href="/" className={styles.brand}>
-            <span className={styles.brandMark} aria-hidden="true"><Image src="/logo.svg" alt="" width={20} height={20} /></span>
-            <span>Nexora</span>
+    <footer className={styles.footerShell}>
+      <div className={styles.footerContainer}>
+        {/* Top Brand & Philosophy Block */}
+        <div className={styles.footerBrandCol}>
+          <Link href="/" className={styles.footerBrand} onClick={scrollToTop}>
+            <div className={styles.brandIconBox}>
+              <Image src="/logo.svg" alt="Nexora Logo" width={18} height={18} />
+            </div>
+            <span className={styles.brandName}>Nexora</span>
           </Link>
-          <p>Private access infrastructure built with Midnight and zero-knowledge proofs.</p>
+          <p className={styles.footerPhilosophy}>
+            &ldquo;Prove permission, not identity.&rdquo;
+          </p>
+          <p className={styles.footerTagline}>
+            Confidential zero-knowledge credential verification gateway powered by Midnight Preprod and Compact smart contracts.
+          </p>
+
+          <div className={styles.footerNetworkTag}>
+            <span className={styles.pulseDotGreen} />
+            <span>Midnight Preprod Contract Verified</span>
+          </div>
         </div>
-        <div className={styles.footerColumn}>
-          <h3>Product</h3>
-          <Link href="/">Try it</Link>
-          <Link href="/#how-it-works">How it works</Link>
-          <Link href="/admin">Operator Console</Link>
-          <Link href="/gate">Member Gate</Link>
+
+        {/* Column 1: Application */}
+        <div className={styles.footerCol}>
+          <h4 className={styles.footerColTitle}>Application</h4>
+          <ul className={styles.footerLinksList}>
+            <li>
+              <Link href="/gate">Member Gate</Link>
+            </li>
+            <li>
+              <Link href="/admin">Operator Console</Link>
+            </li>
+            <li>
+              <Link href="/vault">Encrypted Vault</Link>
+            </li>
+            <li>
+              <a href="#interactive-demo">ZK Sandbox Demo</a>
+            </li>
+          </ul>
         </div>
-        <div className={styles.footerColumn}>
-          <h3>Technology</h3>
-          <a href="https://docs.midnight.network" target="_blank" rel="noreferrer">Midnight</a>
-          <a href="https://docs.midnight.network/develop/reference/compact/" target="_blank" rel="noreferrer">Compact</a>
-          <Link href="/#privacy">Zero-Knowledge</Link>
+
+        {/* Column 2: Architecture */}
+        <div className={styles.footerCol}>
+          <h4 className={styles.footerColTitle}>Architecture</h4>
+          <ul className={styles.footerLinksList}>
+            <li>
+              <a href="https://docs.midnight.network" target="_blank" rel="noreferrer">
+                <span>Midnight Network</span>
+                <ExternalLink size={11} />
+              </a>
+            </li>
+            <li>
+              <a href="https://docs.midnight.network/develop/reference/compact/" target="_blank" rel="noreferrer">
+                <span>Compact DSL</span>
+                <ExternalLink size={11} />
+              </a>
+            </li>
+            <li>
+              <a href="#privacy">Dual-State Model</a>
+            </li>
+            <li>
+              <a href="#security">Cryptographic Guarantees</a>
+            </li>
+          </ul>
         </div>
-        <div className={styles.footerColumn}>
-          <h3>Access</h3>
-          <span>Lace</span>
-          <span>1AM Wallet</span>
-          <span>Preprod</span>
+
+        {/* Column 3: Community & Verify */}
+        <div className={styles.footerCol}>
+          <h4 className={styles.footerColTitle}>Verification &amp; Code</h4>
+          <ul className={styles.footerLinksList}>
+            <li>
+              <a
+                href="https://preprod.midnightexplorer.com/contracts/85c6d5ce4fec74c33a17d4307290bf7d05878637b9f2e70bead1d90bdf5353cc"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span>Contract Explorer</span>
+                <ArrowUpRight size={11} />
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/rishiisarkar/Nexora" target="_blank" rel="noreferrer">
+                <span>Public GitHub</span>
+                <ArrowUpRight size={11} />
+              </a>
+            </li>
+            <li>
+              <a href="https://x.com/NexoraWeb3x" target="_blank" rel="noreferrer">
+                <span>Official X (@NexoraWeb3x)</span>
+                <ArrowUpRight size={11} />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://forms.gle/ShbFDAme1TiP7FRYA"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span>Feedback Form</span>
+                <ExternalLink size={11} />
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div className={styles.footerBottom}>
-        <span>&copy; 2026 Nexora</span>
-        <span>Built on Midnight Preprod</span>
+
+      {/* Bottom Sub-Footer Bar */}
+      <div className={styles.subFooterBar}>
+        <div className={styles.subFooterContainer}>
+          <div className={styles.subFooterLeft}>
+            <span>&copy; {new Date().getFullYear()} Nexora Protocol. Open source under Apache-2.0.</span>
+          </div>
+          <div className={styles.subFooterRight}>
+            <span className={styles.preprodIndicator}>
+              Active Deployment: Preprod 0x85c6...53cc
+            </span>
+            <button type="button" onClick={scrollToTop} className={styles.backToTopBtn}>
+              Back to top ↑
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
   );
