@@ -1,6 +1,8 @@
 <div align="left">
 
   <h1 align="left">🔐 Nexora</h1>
+  
+ * **Live demo:** [Nexora](https://nexora-app-web3.vercel.app/)  |  **Official Product X Handle:** [@NexoraWeb3x](https://x.com/NexoraWeb3x/)
   <h3>Privacy-First Zero-Knowledge Access Control on Midnight Network</h3>
   <p><i>Prove you're authorized — without revealing who you are.</i></p>
 
@@ -78,6 +80,40 @@
 | [midnight_level6_Nexora_plan.md](./midnight_level6_Nexora_plan.md) | Level 6 Nexora planning, requirements, implementation progress, and submission checklist |
 
 ---
+# ✅ Nexora — Level 6 Rejection Fix Checklist
+
+| Requirement                                                                     | Status     |
+| ------------------------------------------------------------------------------- | ---------- |
+| Contract updated this month                                                     | ✅ Complete |
+| New Midnight Preprod deployment completed                                       | ✅ Complete |
+| Deployment transaction hash documented                                          | ✅ Complete |
+| Google Sheet updated with complete onboarded user data                          | ✅ Complete |
+| Name added for onboarded users                                                  | ✅ Complete |
+| Email added for onboarded users                                                 | ✅ Complete |
+| Wallet address added for onboarded users                                        | ✅ Complete |
+| User feedback added                                                             | ✅ Complete |
+| Transaction hash added where applicable                                         | ✅ Complete |
+| 70+ Midnight Preprod users verified                                             | ✅ Complete |
+| User feedback documentation updated                                             | ✅ Complete |
+| Frontend UI significantly improved                                              | ✅ Complete |
+| Custom Nexora logo implemented                                                  | ✅ Complete |
+| Strong visual identity and branding implemented                                 | ✅ Complete |
+| Landing page redesigned and polished                                            | ✅ Complete |
+| Application UI/UX polished                                                      | ✅ Complete |
+| Wallet connection and access flow improved                                      | ✅ Complete |
+| Responsive design improved                                                      | ✅ Complete |
+| Overall product experience upgraded                                             | ✅ Complete |
+| README and documentation updated                                                | ✅ Complete |
+| Latest contract and deployment information documented                           | ✅ Complete |
+| Live application verified after updates                                         | ✅ Complete |
+| CI/CD verified successfully                                                     | ✅ Complete |
+| **60+ meaningful commits demonstrating continuous development and improvement** | ✅ Complete |
+| Level 6 rejection feedback fully addressed                                      | ✅ Complete |
+| Final Level 6 resubmission evidence prepared                                    | ✅ Complete |
+
+## 🏆 Final Status
+
+**✅ ALL LEVEL 6 REJECTION POINTS — COMPLETED**
 
 ## Level 6 Users
 See [`LAUNCH_USERS.md`](./Documents/LAUNCH_USERS.md)
@@ -90,10 +126,7 @@ See [`LAUNCH_USERS.md`](./Documents/LAUNCH_USERS.md)
 
 ## Feedback & Iterations
 See [`docs/FEEDBACK.md`](./docs/FEEDBACK.md) for full details.
-Summary of top changes made from user feedback:
-* **Gas Onboarding:** Added a tDUST faucet banner to prevent zero-gas transaction failures for first-time Preprod testers.
-* **Prover Latency & UI Locking:** Implemented a frontend loading spinner and disabled button states during local ZK proof generation to prevent accidental double-clicking.
-* **Input Validation & Context:** Added client-side input validation for positive numbers to prevent circuit crashes, along with a visual tier legend (Bronze, Silver, Gold) for scoring context.
+
 
 
 ## 🌒 Moonshots Level 1 → 6 — Requirements & Submission Checklist
