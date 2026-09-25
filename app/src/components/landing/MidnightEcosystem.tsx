@@ -1,6 +1,6 @@
 "use client";
 
-import { Check, Code2, ExternalLink, Globe2, Layers2, Lock, ShieldCheck } from "lucide-react";
+import { Code2, ExternalLink, Globe2, Layers2, Lock } from "lucide-react";
 import styles from "./Landing.module.css";
 
 const midnightPillars = [

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ArrowRight, Check, Code, Cpu, ExternalLink, Globe, Layers, Server, Shield, Terminal, Wallet } from "lucide-react";
+import { ArrowRight, Check, Code, Cpu, ExternalLink, Globe, Layers, Shield, Terminal, Wallet } from "lucide-react";
 import styles from "./Landing.module.css";
 
 interface StackLayer {

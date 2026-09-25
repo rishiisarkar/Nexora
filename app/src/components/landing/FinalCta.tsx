@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, ExternalLink, Shield, Sparkles, Terminal } from "lucide-react";
+import { ArrowRight, ExternalLink, Sparkles, Terminal } from "lucide-react";
 import styles from "./Landing.module.css";
 
 export function FinalCta() {

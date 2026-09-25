@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Check, LoaderCircle, Menu, Shield, Wallet, X } from "lucide-react";
+import { ArrowRight, Check, LoaderCircle, Menu, Wallet, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { WalletConnectModal } from "@/components/WalletConnectModal";
 import { APP_NETWORK, MidnightClient } from "@/lib/midnight-client";

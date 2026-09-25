@@ -1,6 +1,6 @@
 "use client";
 
-import { Check, Minus, ShieldCheck, X } from "lucide-react";
+import { Check, ShieldCheck } from "lucide-react";
 import styles from "./Landing.module.css";
 
 interface ComparisonRow {

@@ -288,7 +288,7 @@ export function InteractiveZkDemo() {
                       <span className={styles.pendingDot} />
                       <div>
                         <strong className={styles.verdictPendingTitle}>PROOF NOT YET GENERATED</strong>
-                        <p className={styles.verdictPendingSub}>Click "Generate ZK Proof" above to start</p>
+                        <p className={styles.verdictPendingSub}>Click &quot;Generate ZK Proof&quot; above to start</p>
                       </div>
                     </div>
                   )}

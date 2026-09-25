@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ArrowRight, Check, CheckCircle2, ChevronRight, Cpu, KeyRound, Layers, ShieldCheck } from "lucide-react";
+import { ArrowRight, Check, Layers, ShieldCheck } from "lucide-react";
 import styles from "./Landing.module.css";
 
 interface StepDetail {

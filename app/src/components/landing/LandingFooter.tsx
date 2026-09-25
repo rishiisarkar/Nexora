@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight, ExternalLink, Globe, Shield } from "lucide-react";
+import { ArrowUpRight, ExternalLink } from "lucide-react";
 import styles from "./Landing.module.css";
 
 export function LandingFooter() {

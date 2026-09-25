@@ -1,25 +1,303 @@
-# User Feedback - Level 5
+# 📝 Nexora — User Feedback & Testing Report
 
-## Feedback Collection Method
-Direct outreach via Discord channels, Telegram developer groups, and Twitter (X) replies following the Preprod release link.
+> **Level 6 Submission Evidence — Midnight Preprod**
 
-## Raw Feedback Log
-| # | User | Feedback Summary | Date |
-|---|------|-----------------|------|
-| 1 | @0x_builder | Getting tDUST from the faucet was not obvious. Tried to execute transactions without gas tokens. | 2026-09-08 |
-| 2 | TG: AlexM | Lace connection disconnected when switching tabs during local ZK proof generation. | 2026-09-08 |
-| 3 | @zk_fanatic | WhisperScore verification takes 3-5 seconds locally; without visual feedback, it caused accidental double clicks. | 2026-09-09 |
-| 4 | TG: cryptodave | Received an unhandled circuit runtime error when entering negative numbers in the threshold input. | 2026-09-10 |
-| 5 | @dev_sarah | On-chain verification works well, but users requested a score tier legend to understand threshold metrics. | 2026-09-11 |
+Nexora was tested by users on the **Midnight Preprod Testnet** to evaluate the product experience, usability, UI/UX, wallet connection flow, access-gate experience, and overall concept.
 
-## What We Heard (Themes)
-* **Onboarding Friction:** New users need clear instructions and faucet links to acquire Preprod tDUST before interacting.
-* **Prover Latency & UI Locking:** Local Compact circuit execution requires an explicit spinner and disabled button state to prevent duplicate calls.
-* **Input Sanitization & Context:** The client must reject non-positive values before executing proof circuits, and tier classifications need visual context.
+The feedback loop was used to collect both quantitative ratings and qualitative suggestions from real testers.
 
-## Level 6 Improvements
-| Change | User Feedback That Triggered It | Status |
-|--------|--------------------------------|--------|
-| Added faucet banner & Preprod tDUST link in `WalletConnect.tsx` | Users didn't know how to get tDUST and tried zero-gas transactions. | Implemented (Commit `28a122f`) |
-| Added loading spinner & disabled state in `VerifyPowerUser.tsx` | App appeared frozen during 3-5s ZK proof generation, causing accidental double clicks. | Implemented (Commit `8727bb4`) |
-| Added client-side input validation & score tier legend | Negative inputs caused circuit runtime errors; users wanted visual context for the threshold metrics. | Implemented (Commit `8727bb4`) |
+---
+
+## 📊 Feedback Overview
+
+| Metric                             |               Result |
+| ---------------------------------- | -------------------: |
+| Product Testing Period             | 17–21 September 2026 |
+| Feedback Responses                 |                   71 |
+| Midnight Preprod Wallets Collected |                  70+ |
+| Feedback Method                    |          Google Form |
+| Feedback Storage                   |        Google Sheets |
+| Rating Scale                       |                 1–10 |
+| Product Preference Question        |             Yes / No |
+
+---
+
+## 🔄 Feedback Collection Process
+
+The Nexora team followed the following feedback loop:
+
+```text
+User Testing
+     ↓
+Connect Midnight Preprod Wallet
+     ↓
+Explore Nexora
+     ↓
+Test Access / Gate Experience
+     ↓
+Submit Feedback Form
+     ↓
+Collect Rating + Suggestions
+     ↓
+Identify UX / Functional Issues
+     ↓
+Review & Improve Product
+```
+
+Each tester was asked to provide:
+
+* Name
+* Email
+* Midnight Preprod wallet address
+* Whether they liked the product
+* Product rating from 1–10
+* Additional thoughts, suggestions, or reported issues
+
+---
+
+## 🧪 What Was Tested
+
+Users were encouraged to interact with the live Nexora application and evaluate:
+
+* Landing page and product presentation
+* User onboarding
+* Midnight wallet connection
+* Access-gate experience
+* Circle/access interaction
+* UI and UX
+* Mobile responsiveness
+* Navigation
+* Animations and loading behavior
+* Overall product concept
+* Privacy-focused access experience
+
+---
+
+## 💬 Key Feedback Themes
+
+The collected feedback highlighted several positive aspects as well as areas for improvement.
+
+### ✅ Positive Feedback
+
+Users specifically mentioned:
+
+* Smooth and modern UI
+* Good overall UX
+* Interesting and unique product concept
+* Privacy-focused approach
+* Good use of Midnight blockchain
+* Smooth animations and interactions
+* Strong visual presentation
+* Interesting Web3 use case
+* Overall product experience was enjoyable
+
+Example feedback included:
+
+> "Very exciting. Loved the idea and also the UI and UX. Great work"
+
+> "I liked the UI, it is too smooth"
+
+> "unique product"
+
+> "Very good website"
+
+> "Great use of Midnight blockchain. I was also developing in this blockchain and the idea is superb"
+
+> "Not a web3 developer but surely liked the idea and the UI is too good"
+
+---
+
+## ⚠️ Issues & Improvement Suggestions
+
+The feedback also identified several areas that can be improved.
+
+### 📱 Mobile Experience
+
+Some users reported:
+
+* Navigation issues on mobile
+* Mobile-view layout problems
+* Mobile usability improvements needed
+
+### ⚡ Performance
+
+Users reported:
+
+* Animation lag in some areas
+* Some interactions taking longer than expected
+* Circle creation taking time
+
+### 🔐 Access / Wallet Flow
+
+Some testers reported:
+
+* Difficulty opening circles after connecting their wallet
+* Access flow being slightly complex
+* Wallet-connected users encountering issues while accessing content
+
+### 🧩 Product Simplicity
+
+Some feedback suggested:
+
+* Simplifying the overall experience
+* Making certain flows easier to understand
+* Adding more useful features
+
+### 🛠️ Settlement Issues
+
+Multiple testers reported issues related to settlements.
+
+These reports were recorded as development feedback for further investigation and improvement.
+
+### 📄 Content Length
+
+One tester specifically mentioned that the **About Us** page was too lengthy.
+
+---
+
+## 📋 Feedback-to-Improvement Mapping
+
+| Feedback Area   | User Observation                     | Improvement Direction                                 |
+| --------------- | ------------------------------------ | ----------------------------------------------------- |
+| Mobile UX       | Navigation issues                    | Improve responsive navigation                         |
+| Mobile UI       | Layout issues on mobile              | Review responsive layouts                             |
+| Animations      | Animations sometimes lag             | Optimize animations and rendering                     |
+| Circle Creation | Takes time                           | Improve loading states and performance                |
+| Circle Access   | Some users couldn't open circles     | Review wallet/access verification flow                |
+| Complexity      | Product can feel complex             | Simplify user journey                                 |
+| Features        | Users requested more useful features | Expand product functionality                          |
+| Settlements     | Settlement-related issues reported   | Investigate and improve settlement flow               |
+| About Us        | Page considered lengthy              | Improve content hierarchy and reduce unnecessary copy |
+
+---
+
+## 📈 Quantitative Feedback
+
+Users were asked to rate Nexora on a scale of **1–10**.
+
+The collected ratings ranged from **4 to 10**, providing both positive validation and actionable criticism.
+
+The feedback was intentionally kept open to negative responses as well, allowing testers to report problems instead of only collecting positive responses.
+
+One tester rated the product **4/10** and another provided multiple ratings in the **6–8/10** range, helping identify areas requiring further improvement.
+
+---
+
+## 🗣️ Selected User Feedback
+
+### UI / UX
+
+> "Very exciting. Loved the idea and also the UI and UX. Great work"
+
+> "I liked the UI, it is too smooth"
+
+> "Very good website"
+
+> "Very good"
+
+### Product Concept
+
+> "unique product"
+
+> "Great use of Midnight blockchain. I was also developing in this blockchain and the idea is superb"
+
+### Improvement Feedback
+
+> "some navigation issues in mobile"
+
+> "animations lagging should be fixed"
+
+> "taking time in creating circle"
+
+> "bit complex"
+
+> "want some more useful features"
+
+> "found some issues in mobile view"
+
+> "About us page is a lot lengthy"
+
+> "settlements are not working"
+
+---
+
+## 🔗 Feedback Resources
+
+### 📝 Feedback Form
+
+The feedback was collected through the official Nexora feedback form:
+
+https://forms.gle/ShbFDAme1TiP7FRYA
+
+### 📊 Feedback Spreadsheet
+
+The complete responses are maintained in the feedback spreadsheet:
+
+https://docs.google.com/spreadsheets/d/15vLOWZlfG9bBFbDRfPmD1uYHZlk1dcgLbbNT8eNDcPQ/edit?usp=sharing
+
+### 👥 Wallet Address Evidence
+
+The collected Midnight Preprod wallet addresses are documented separately in:
+
+`ADDRESSES.md`
+
+---
+
+## 🔐 Privacy & Data Handling
+
+Nexora's core purpose is privacy-preserving access.
+
+The feedback documentation contains tester-provided information required for testing verification, including wallet addresses.
+
+This repository does **not** contain:
+
+* Private keys
+* Seed phrases
+* Recovery phrases
+* Wallet passwords
+* Raw authentication credentials
+* ZK witness data
+* Private Merkle paths
+
+Public blockchain wallet addresses are treated as public identifiers.
+
+---
+
+## 🌐 Nexora Resources
+
+| Resource             | Link                                                                                                            |
+| -------------------- | --------------------------------------------------------------------------------------------------------------- |
+| Live Application     | https://nexora-app-web3.vercel.app/                                                                             |
+| GitHub Repository    | https://github.com/rishiisarkar/Nexora                                                                          |
+| X / Twitter          | https://x.com/NexoraWeb3x/                                                                                      |
+| Demo Video           | https://drive.google.com/file/d/1cAb_dis5CkSjRz4XW3x5RSnGYpUv2BDh/view?usp=sharing                              |
+| Feedback Form        | https://forms.gle/ShbFDAme1TiP7FRYA                                                                             |
+| Feedback Spreadsheet | https://docs.google.com/spreadsheets/d/15vLOWZlfG9bBFbDRfPmD1uYHZlk1dcgLbbNT8eNDcPQ/edit?usp=sharing            |
+| Preprod Contract     | `0xf36db0fda42e4c3b474bdd06fc72725670ab3ebb8e089f9923bf83ab855b454e`                                            |
+| Preprod Explorer     | https://preprod.midnightexplorer.com/contracts/0xf36db0fda42e4c3b474bdd06fc72725670ab3ebb8e089f9923bf83ab855b454e |
+
+---
+
+## ✅ Level 6 Feedback Requirement
+
+The feedback loop for Nexora has been documented through:
+
+* ✅ Live user testing
+* ✅ User feedback form
+* ✅ Quantitative product ratings
+* ✅ Qualitative user comments
+* ✅ Midnight Preprod wallet collection
+* ✅ Issue identification
+* ✅ Improvement mapping
+* ✅ Public feedback documentation
+* ✅ Separate wallet-address evidence in `ADDRESSES.md`
+
+---
+
+## 📌 Conclusion
+
+The Nexora testing phase provided both positive validation of the product concept and actionable feedback for future development.
+
+The feedback particularly validated the interest in Nexora's **privacy-focused access model, UI/UX, and Midnight integration**, while identifying areas around **mobile responsiveness, performance, access flow, product simplicity, and settlement functionality** that can be further improved.
+
+All collected feedback has been preserved as part of Nexora's Level 6 testing and documentation evidence.

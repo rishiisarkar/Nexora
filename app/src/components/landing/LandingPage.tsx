@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, ChevronRight, Terminal } from "lucide-react";
+import { ChevronRight, Terminal } from "lucide-react";
 import { LandingNavbar } from "./LandingNavbar";
 import { HeroVisual } from "./HeroVisual";
 import { ProblemComparison } from "./ProblemComparison";

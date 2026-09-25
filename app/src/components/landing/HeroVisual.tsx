@@ -18,9 +18,30 @@ const mockData: CredentialRow[] = [
   { label: "Vault Credential", revealedValue: "0x981...efb", encryptedHash: "0x77ab...33d1", requirement: "Allowlist Member" },
 ];
 
+function ProofProgressBar({ phase }: { phase: "input" | "proving" | "verified" }) {
+  const [progress, setProgress] = useState(0);
+
+  useEffect(() => {
+    if (phase !== "proving") return;
+
+    const interval = setInterval(() => {
+      setProgress((p) => (p >= 100 ? 100 : p + 8));
+    }, 80);
+
+    return () => clearInterval(interval);
+  }, [phase]);
+
+  const width = phase === "input" ? "15%" : phase === "verified" ? "100%" : `${progress}%`;
+
+  return (
+    <div className={styles.proofProgressBar}>
+      <div className={styles.proofProgressFill} style={{ width }} />
+    </div>
+  );
+}
+
 export function HeroVisual() {
   const [phase, setPhase] = useState<"input" | "proving" | "verified">("input");
-  const [progress, setProgress] = useState(0);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -33,21 +54,6 @@ export function HeroVisual() {
 
     return () => clearInterval(timer);
   }, []);
-
-  useEffect(() => {
-    let interval: NodeJS.Timeout;
-    if (phase === "proving") {
-      setProgress(0);
-      interval = setInterval(() => {
-        setProgress((p) => (p >= 100 ? 100 : p + 8));
-      }, 80);
-    } else if (phase === "verified") {
-      setProgress(100);
-    } else {
-      setProgress(0);
-    }
-    return () => clearInterval(interval);
-  }, [phase]);
 
   const triggerCycle = () => {
     if (phase === "proving") return;
@@ -156,12 +162,7 @@ export function HeroVisual() {
               {phase === "proving" && "Synthesizing ZK-SNARK Witness..."}
               {phase === "verified" && "Proof Verified by Ledger"}
             </div>
-            <div className={styles.proofProgressBar}>
-              <div
-                className={styles.proofProgressFill}
-                style={{ width: phase === "input" ? "15%" : `${progress}%` }}
-              />
-            </div>
+            <ProofProgressBar key={phase} phase={phase} />
             <div className={styles.cryptoEquations}>
               <span>π = Proof(x, w)</span>
               <span>C(x, w) = 0</span>

@@ -1,6 +1,6 @@
 "use client";
 
-import { Check, Cpu, EyeOff, Hash, Key, Lock, ShieldCheck } from "lucide-react";
+import { Cpu, EyeOff, Hash, Key, Lock, ShieldCheck } from "lucide-react";
 import styles from "./Landing.module.css";
 
 interface GuaranteeItem {

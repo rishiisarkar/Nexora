@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ArrowRight, Check, CheckCircle2, ChevronRight, ExternalLink, KeyRound, Lock, ShieldCheck, Sparkles, Terminal, Wallet } from "lucide-react";
+import { ArrowRight, CheckCircle2, KeyRound, Lock, ShieldCheck, Sparkles, Terminal } from "lucide-react";
 import styles from "./Landing.module.css";
 
 export function ProductShowcase() {
