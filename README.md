@@ -1,6 +1,6 @@
-<div align="center">
+<div align="left">
 
-  <h1 align="center">🔐 Nexora</h1>
+  <h1 align="left">🔐 Nexora</h1>
   <h3>Privacy-First Zero-Knowledge Access Control on Midnight Network</h3>
   <p><i>Prove you're authorized — without revealing who you are.</i></p>
 
@@ -16,9 +16,10 @@
 <br />
 
 > Confidential, production-grade Zero-Knowledge access control gateway built on the Midnight Network. Nexora lets users prove they are authorized to access a resource — without ever revealing their identity, wallet history, or the underlying credential.
-
+</div>
 
 ## 🏆 Level 6 Verification & Submission Deliverables
+
 <div align="left">
   
 * 🌐 **Live Web Application:** https://nexora-app-web3.vercel.app/ *(Live Nexora application deployed on Midnight Preprod)*
@@ -58,7 +59,6 @@
 ### 🟢 Level 6 Status
 
 **All required Level 6 deliverables have been completed and are available for verification through the Nexora repository, live application, Midnight Preprod deployment, user feedback records, and demonstration materials.**
-
 </div>
 
 ---
