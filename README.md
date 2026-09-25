@@ -12,22 +12,57 @@
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License" />
 
 <br />
-  <br />
-  <a href="https://github.com/rishiisarkar/Nexora/actions/runs/32278800387">
-    <img src="https://img.shields.io/badge/CI%2FCD-passing-brightgreen?style=for-the-badge" alt="CI/CD Pipeline Status" />
-  </a>
-</div>
-<br />
-<img width="1896" height="897" alt="image" src="https://github.com/user-attachments/assets/08b92718-1c8c-4d11-9520-abe8f53b9b92" />
-
-<br />
+ 
 <br />
 
 > Confidential, production-grade Zero-Knowledge access control gateway built on the Midnight Network. Nexora lets users prove they are authorized to access a resource — without ever revealing their identity, wallet history, or the underlying credential.
 
-**Nexora** replaces traditional wallet-based allowlists and token-gated access with a Zero-Knowledge Merkle membership proof. Members prove they hold a valid, enrolled credential and generate a single-use nullifier locally in their browser — nothing sensitive ever touches the chain. Built for the **First Quarter (Level 3)** challenge as part of the **RiseIn & Midnight Foundation "New Moon to Full: Monthly Moonshots on Midnight" Program 2026**.
+
+## 🏆 Level 6 Verification & Submission Deliverables
+<div align="left">
+  
+* 🌐 **Live Web Application:** https://nexora-app-web3.vercel.app/ *(Live Nexora application deployed on Midnight Preprod)*
+
+* 💻 **Public GitHub Repository:** https://github.com/rishiisarkar/Nexora *(Complete open-source Nexora implementation with updated documentation)*
+
+* ⛓️ **Midnight Preprod Contract:** `0x85c6d5ce4fec74c33a17d4307290bf7d05878637b9f2e70bead1d90bdf5353cc`
+
+* 🔍 **Preprod Contract Explorer:** [View Nexora on Midnight Preprod Explorer](https://preprod.midnightexplorer.com/contracts/85c6d5ce4fec74c33a17d4307290bf7d05878637b9f2e70bead1d90bdf5353cc) *(Publicly verifiable contract deployment)*
+
+* 🐦 **Official Product X Handle:** [@NexoraWeb3x](https://x.com/NexoraWeb3x/) *(Official Nexora profile for product updates, Midnight development progress, privacy-focused content, and community outreach)*
+
+* 📊 **Mandatory User Feedback Google Sheet:** [View Nexora User Feedback Responses](https://docs.google.com/spreadsheets/d/15vLOWZlfbG9BFbDRfPmD1uYHZlk1dcgLbbNT8eNDcPQ/edit?usp=sharing) *(Mandatory Level 5 & Level 6 feedback format)*
+
+* 📝 **User Feedback Collection Form:** [Open Nexora Feedback Form](https://forms.gle/ShbFDAme1TiP7FRYA) *(Used to collect tester feedback, usability observations, issues, and improvement suggestions)*
+
+* 👥 **70+ Verifiable Preprod Users:** `70+ Midnight Preprod tester wallet addresses` *(Verifiable user participation and on-chain activity)*
+
+* 💬 **Documented Feedback Loop:** `FEEDBACK.md` *(Documents tester feedback, identified friction points, product improvements, and development iterations)*
+
+* 📚 **Updated Project Documentation:** `README.md` *(Complete documentation covering Nexora architecture, privacy model, setup, wallet integration, ZK verification flow, Preprod deployment, and usage instructions)*
+
+* 🎥 **Demo Video Walkthrough:** [Watch the Nexora MVP Demo](https://drive.google.com/file/d/1cAb_dis5CkSjRz4XW3x5RSnGYpUv2BDh/view?usp=sharing) *(Full end-to-end Nexora MVP demonstration)*
+
+* 🔐 **Privacy-Preserving Verification:** Nexora proves authorized membership through a Zero-Knowledge proof without exposing the raw credential, Merkle inclusion path, or private witness values on-chain.
+
+* ♻️ **Nullifier Replay Protection:** Every successful verification uses a unique nullifier, preventing previously used authorization proofs from being replayed.
+
+* 👛 **Multi-Wallet Support:** Lace and 1AM wallet integration for secure Midnight Preprod authentication and transaction signing.
+
+* ⚙️ **CI/CD Pipeline:** ✅ Configured and passing *(Automated build and deployment workflow integrated into the public repository)*
+
+* 💻 **Commit History:** `30+ meaningful commits` *(Exceeds the Level 6 minimum requirement and demonstrates continuous development and iteration)*
+
+* 🧪 **End-to-End MVP Verification:** ✅ Complete *(Admin gate creation → credential enrollment → local ZK proof generation → Midnight verification → nullifier protection → private access unlock)*
+
+### 🟢 Level 6 Status
+
+**All required Level 6 deliverables have been completed and are available for verification through the Nexora repository, live application, Midnight Preprod deployment, user feedback records, and demonstration materials.**
+
+</div>
 
 ---
+
 ## Documentation
 
 | Document | Description |
