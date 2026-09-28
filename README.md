@@ -24,6 +24,8 @@
 > Confidential, production-grade Zero-Knowledge access control gateway built on the Midnight Network. Nexora lets users prove they are authorized to access a resource — without ever revealing their identity, wallet history, or the underlying credential.
 </div>
 
+<img width="1897" height="902" alt="image" src="https://github.com/user-attachments/assets/3726a736-8826-41ef-b3b0-f6a3149c0545" />
+
 ## 🏆 Level 6 Verification & Submission Deliverables
 
 <div align="left">
@@ -48,7 +50,7 @@
 
 * 📚 **Updated Project Documentation:** `README.md` *(Complete documentation covering Nexora architecture, privacy model, setup, wallet integration, ZK verification flow, Preprod deployment, and usage instructions)*
 
-* 🎥 **Demo Video Walkthrough:** [Watch the Nexora MVP Demo](https://drive.google.com/file/d/1cAb_dis5CkSjRz4XW3x5RSnGYpUv2BDh/view?usp=sharing) *(Full end-to-end Nexora MVP demonstration)*
+* 🎥 **Demo Video Walkthrough:** [Watch the Nexora MVP Demo](https://drive.google.com/file/d/1goX-TcGgUvW0TvEXH0q3t3ML84IY-rmF/view?usp=sharing) *(Full end-to-end Nexora MVP demonstration)*
 
 * 🔐 **Privacy-Preserving Verification:** Nexora proves authorized membership through a Zero-Knowledge proof without exposing the raw credential, Merkle inclusion path, or private witness values on-chain.
 
@@ -111,7 +113,7 @@
 | Latest contract and deployment information documented                           | ✅ Complete |
 | Live application verified after updates                                         | ✅ Complete |
 | CI/CD verified successfully                                                     | ✅ Complete |
-| **60+ meaningful commits demonstrating continuous development and improvement** | ✅ Complete |
+| **71+ meaningful commits demonstrating continuous development and improvement** | ✅ Complete |
 | Level 6 rejection feedback fully addressed                                      | ✅ Complete |
 | Final Level 6 resubmission evidence prepared                                    | ✅ Complete |
 
@@ -174,7 +176,7 @@ Follow **Nexora** on X for product updates, Midnight development progress, priva
 
 👉 **[Follow @NexoraWeb3x on X](https://x.com/NexoraWeb3x/)**
 
-## **Demo Video** [Watch the Nexora Demo Video on Google Drive](https://drive.google.com/file/d/1cAb_dis5CkSjRz4XW3x5RSnGYpUv2BDh/view?usp=sharing)
+## **Demo Video** [Watch the Nexora Demo Video on Google Drive](https://drive.google.com/file/d/1goX-TcGgUvW0TvEXH0q3t3ML84IY-rmF/view?usp=sharing)
 ---
 
 ## 📋 Quick Links & CheckList
@@ -183,7 +185,7 @@ Follow **Nexora** on X for product updates, Midnight development progress, priva
 | 𝕏 **X / Twitter** | [@NexoraWeb3x](https://x.com/NexoraWeb3x/) |
 | **🌐Live Demo** | [https://nexora-app-web3.vercel.app/](https://nexora-app-web3.vercel.app/) |
 | **Preprod** | `0xf36db0fda42e4c3b474bdd06fc72725670ab3ebb8e089f9923bf83ab855b454e` |
-| **Demo Video** |[Watch the Nexora Demo Video on Google Drive](https://drive.google.com/file/d/1cAb_dis5CkSjRz4XW3x5RSnGYpUv2BDh/view?usp=sharing) |
+| **Demo Video** |[Watch the Nexora Demo Video on Google Drive](https://drive.google.com/file/d/1goX-TcGgUvW0TvEXH0q3t3ML84IY-rmF/view?usp=sharing) |
 | CI/CD pipeline running (workflow file + passing runs)                 |               ✅ **Passed**                |
 
 > Preprod deployed. Verify the new address on [Midnight Preprod Explorer](https://preprod.midnightexplorer.com/contracts/f36db0fda42e4c3b474bdd06fc72725670ab3ebb8e089f9923bf83ab855b454e) 
@@ -225,7 +227,7 @@ Follow **Nexora** on X for product updates, Midnight development progress, priva
 | **Feedback response data**                              | Google Sheets: https://docs.google.com/spreadsheets/d/15vLOWZlfbG9BFbDRfPmD1uYHZlk1dcgLbbNT8eNDcPQ/edit?usp=sharing  | 🟢 **Completed** |
 | **Documented feedback loop**                            | Tester feedback → issue identification → UX / functionality improvements → iteration                                 | 🟢 **Completed** |
 | **Updated project documentation**                       | README, architecture, privacy model, setup, wallet flow, ZK verification, Preprod deployment and usage documentation | 🟢 **Completed** |
-| **Demo video showing full MVP functionality**           | https://drive.google.com/file/d/1cAb_dis5CkSjRz4XW3x5RSnGYpUv2BDh/view?usp=sharing                                   | 🟢 **Completed** |
+| **Demo video showing full MVP functionality**           | https://drive.google.com/file/d/1goX-TcGgUvW0TvEXH0q3t3ML84IY-rmF/view?usp=sharing                                   | 🟢 **Completed** |
 | **Official product X account**                          | https://x.com/NexoraWeb3x/                                                                                           | 🟢 **Completed** |
 | **Minimum 30 meaningful commits**                       | Continuous development and iteration documented in the public GitHub repository                                      | 🟢 **Completed** |
 | **CI/CD pipeline**                                      | Automated CI/CD workflow configured with passing runs                                                                | 🟢 **Completed** |
@@ -257,7 +259,8 @@ Follow **Nexora** on X for product updates, Midnight development progress, priva
 
 
 ### 3. CI & CD Running 
-<img width="1915" height="658" alt="Screenshot 2026-08-19 223155" src="https://github.com/user-attachments/assets/235632aa-710e-4ac8-9b63-af10c8cc1901" />
+<img width="1902" height="770" alt="image" src="https://github.com/user-attachments/assets/6be4ece5-ab76-4299-9adc-12d8a0897c23" />
+
 
 
 ---
