@@ -295,125 +295,119 @@ export function LandingPage() {
           </section>
 
           {/* ============================================================== */}
-          {/* SECTION: THE PROBLEM (Side-by-Side Comparison)                */}
+          {/* SECTION: THE PROBLEM — Premium light redesign                  */}
           {/* ============================================================== */}
           <section
             id="privacy"
-            className="relative w-full pt-10 sm:pt-14 pb-20 px-4 sm:px-6 md:px-12 lg:px-16 bg-gradient-to-b from-[#f6eee7] via-[#faf5f1] to-[#fbf9f8] border-b border-[#e9e8e7] overflow-hidden"
+            className="relative w-full overflow-hidden"
+            style={{ background: "#ffffff" }}
           >
-            {/* Seamless continuing smoke merging completely with hero */}
-            <div className="absolute inset-x-0 top-0 h-[480px] sm:h-[560px] pointer-events-none overflow-hidden z-0">
-              {/* Dense upper warm mist wash matching hero base */}
+            {/* Ambient light accents */}
+            <div className="pointer-events-none absolute inset-0 overflow-hidden">
               <div
-                className="absolute inset-0"
-                style={{
-                  background:
-                    "radial-gradient(ellipse 110% 88% at 50% 0%, rgba(220, 172, 146, 0.85) 0%, rgba(232, 196, 174, 0.68) 35%, rgba(244, 220, 204, 0.38) 65%, transparent 100%)",
-                }}
+                className="absolute -top-32 left-0 h-[500px] w-[500px] rounded-full opacity-[0.22]"
+                style={{ background: "radial-gradient(circle, #fecaca 0%, transparent 70%)", filter: "blur(70px)" }}
               />
-
-              {/* Billowing cloud continuing on right */}
               <div
-                className="absolute -top-24 right-[-5%] sm:right-[5%] w-[820px] h-[380px] rounded-full blur-[90px] sm:blur-[120px] opacity-90"
-                style={{
-                  background:
-                    "radial-gradient(circle, rgba(210, 160, 134, 0.88) 0%, rgba(228, 190, 168, 0.58) 50%, transparent 80%)",
-                }}
-              />
-
-              {/* Billowing cloud continuing on left */}
-              <div
-                className="absolute -top-24 left-[-5%] sm:left-[0%] w-[780px] h-[360px] rounded-full blur-[85px] sm:blur-[115px] opacity-85"
-                style={{
-                  background:
-                    "radial-gradient(circle, rgba(222, 178, 154, 0.85) 0%, rgba(236, 204, 186, 0.52) 55%, transparent 80%)",
-                }}
-              />
-
-              {/* Billowing center mist plume */}
-              <div
-                className="absolute top-[-30px] left-1/2 -translate-x-1/2 w-[740px] h-[300px] rounded-full blur-[75px] sm:blur-[105px] opacity-85"
-                style={{
-                  background:
-                    "radial-gradient(ellipse, rgba(206, 154, 128, 0.78) 0%, rgba(226, 188, 166, 0.5) 60%, transparent 85%)",
-                }}
-              />
-
-              {/* Atmospheric horizontal drifting veil */}
-              <div
-                className="absolute top-0 inset-x-0 h-[240px] opacity-55 blur-[50px]"
-                style={{
-                  background:
-                    "linear-gradient(90deg, rgba(235, 205, 190, 0.35) 0%, rgba(224, 188, 168, 0.65) 25%, rgba(212, 172, 148, 0.75) 50%, rgba(228, 198, 182, 0.65) 75%, rgba(235, 205, 190, 0.35) 100%)",
-                }}
+                className="absolute -top-32 right-0 h-[500px] w-[500px] rounded-full opacity-[0.18]"
+                style={{ background: "radial-gradient(circle, #a5f3d8 0%, transparent 70%)", filter: "blur(70px)" }}
               />
             </div>
 
-            <div className="relative z-10 max-w-[1240px] mx-auto">
-              {/* ============================================================== */}
-              {/* MIDNIGHT PREVIEW LIVE NODE STATUS PANEL                       */}
-              {/* Centered at the top, preceding The Problem section             */}
-              {/* ============================================================== */}
-              <div className="w-full flex justify-center mb-14 sm:mb-18">
-                <div className="w-full max-w-[1140px] rounded-2xl p-4 sm:px-6 sm:py-4.5 bg-[#faf5ef]/90 hover:bg-[#faf5ef]/95 backdrop-blur-xl border border-[#ded0c1]/80 shadow-[0_12px_40px_rgba(46,38,34,0.08)] transition-all">
-                  {/* Primary Infrastructure Status Row */}
-                  <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-3 pb-3 border-b border-[#e9ded3]/80">
-                    {/* Left: Node status + Block height + Latency */}
-                    <div className="flex flex-wrap items-center gap-2.5 sm:gap-3.5 text-[13px]">
-                      <div className="flex items-center gap-2 font-medium text-[#241d1a]">
+            <div className="relative z-10 mx-auto max-w-[1240px] px-6 py-28 lg:px-16">
+
+              {/* Live Node Status Panel — redesigned to match light theme */}
+              <div className="mb-16 w-full">
+                <div
+                  className="w-full rounded-2xl p-4 sm:px-6 sm:py-5 transition-all"
+                  style={{
+                    background: "#f8f7f5",
+                    border: "1px solid #e8e5df",
+                    boxShadow: "0 2px 16px rgba(0,0,0,0.04), 0 1px 4px rgba(0,0,0,0.03)",
+                  }}
+                >
+                  {/* Primary row */}
+                  <div
+                    className="flex flex-col lg:flex-row lg:items-center justify-between gap-3 pb-3"
+                    style={{ borderBottom: "1px solid #ece9e3" }}
+                  >
+                    <div className="flex flex-wrap items-center gap-2.5 sm:gap-4 text-[13px]">
+                      <div className="flex items-center gap-2 font-semibold" style={{ color: "#1a1a1a" }}>
                         <span className="relative flex h-2 w-2">
-                          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#1b8a5a] opacity-75 duration-1000" />
-                          <span className="relative inline-flex rounded-full h-2 w-2 bg-[#1b8a5a]" />
+                          <span className="animate-ping absolute inline-flex h-full w-full rounded-full opacity-70" style={{ background: "#0d9066" }} />
+                          <span className="relative inline-flex rounded-full h-2 w-2" style={{ background: "#0d9066" }} />
                         </span>
-                        <span>Midnight PREVIEW Live Node</span>
+                        Midnight PREVIEW Live Node
                       </div>
 
-                      <span className="text-[#cbbeaf] hidden sm:inline" aria-hidden="true">|</span>
+                      <span className="hidden sm:inline" style={{ color: "#cbc8c0" }}>|</span>
 
-                      <div className="font-mono text-[12px] text-[#5c4f46] flex items-center gap-2">
+                      <div
+                        className="flex items-center gap-2 text-[12px]"
+                        style={{ color: "#6b6460", fontFamily: "var(--font-geist, monospace)" }}
+                      >
                         <span>Block #1,065,601</span>
-                        <span className="text-[#baa99b]" aria-hidden="true">·</span>
-                        <span className="text-[#1b8a5a] font-medium">480ms Latency</span>
+                        <span style={{ color: "#c0bbb5" }}>·</span>
+                        <span style={{ color: "#0d9066", fontWeight: 600 }}>480ms Latency</span>
                       </div>
                     </div>
 
-                    {/* Right: Verified Contract & Spec Badges */}
-                    <div className="flex flex-wrap items-center gap-2 sm:gap-2.5 text-[12px]">
-                      <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-[#eee2d6]/75 border border-[#ddcfc1] font-mono text-[#2c231f]">
-                        <span className="w-1.5 h-1.5 rounded-full bg-[#1b8a5a]" />
-                        <span>Verified Contract <span className="font-semibold text-[#181311]">f36db0fd...5b454e</span></span>
+                    <div className="flex flex-wrap items-center gap-2 text-[12px]">
+                      <div
+                        className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg"
+                        style={{
+                          background: "#f0fdf8",
+                          border: "1px solid #b6ecd8",
+                          color: "#1a1a1a",
+                          fontFamily: "var(--font-geist, monospace)",
+                        }}
+                      >
+                        <span className="w-1.5 h-1.5 rounded-full" style={{ background: "#0d9066" }} />
+                        Verified Contract <span style={{ fontWeight: 600 }}>f36db0fd...5b454e</span>
                       </div>
 
-                      <div className="flex items-center gap-1.5 text-[#5c4f46] px-2 py-0.5">
-                        <span className="w-1 h-1 rounded-full bg-[#1b8a5a]" />
-                        <span>Zero Docker Required for Clients</span>
+                      <div className="flex items-center gap-1.5 px-2 py-0.5 text-[12px]" style={{ color: "#6b6460" }}>
+                        <span className="w-1 h-1 rounded-full" style={{ background: "#0d9066" }} />
+                        Zero Docker Required
                       </div>
 
-                      <div className="flex items-center gap-1.5 text-[#5c4f46] px-2 py-0.5">
-                        <span className="w-1 h-1 rounded-full bg-[#1b8a5a]" />
-                        <span>WASM ZK Prover</span>
+                      <div className="flex items-center gap-1.5 px-2 py-0.5 text-[12px]" style={{ color: "#6b6460" }}>
+                        <span className="w-1 h-1 rounded-full" style={{ background: "#0d9066" }} />
+                        WASM ZK Prover
                       </div>
                     </div>
                   </div>
 
-                  {/* Secondary Row: Preprod Contract Address & Explorer CTA */}
+                  {/* Secondary row: contract address */}
                   <div className="pt-3 flex flex-col md:flex-row md:items-center justify-between gap-3 text-[12.5px]">
-                    <div className="flex flex-wrap items-center gap-2 text-[#5c4f46] min-w-0">
-                      <span className="font-mono text-[11px] uppercase tracking-wider text-[#7a6a5e] font-semibold shrink-0">
+                    <div className="flex flex-wrap items-center gap-2 min-w-0" style={{ color: "#6b6460" }}>
+                      <span
+                        className="text-[11px] font-semibold uppercase tracking-wider shrink-0"
+                        style={{ color: "#9b9690", fontFamily: "var(--font-geist, monospace)" }}
+                      >
                         Nexora Preprod Contract
                       </span>
-                      <span className="text-[#cbbeaf] hidden sm:inline" aria-hidden="true">:</span>
-                      <code className="font-mono text-[12px] text-[#241d1a] bg-[#f0e4d9]/85 px-3 py-1 rounded-md border border-[#decfc1] select-all break-all sm:break-normal">
+                      <span className="hidden sm:inline" style={{ color: "#d0ccc6" }}>:</span>
+                      <code
+                        className="text-[11.5px] select-all break-all sm:break-normal px-3 py-1 rounded-lg"
+                        style={{
+                          fontFamily: "var(--font-geist, monospace)",
+                          color: "#1a1a1a",
+                          background: "#f0ede8",
+                          border: "1px solid #e0dbd4",
+                        }}
+                      >
                         0xf36db0fda42e4c3b474bdd06fc72725670ab3ebb8e089f9923bf83ab855b454e
                       </code>
                       <button
                         type="button"
                         onClick={() => handleCopyAddress("0xf36db0fda42e4c3b474bdd06fc72725670ab3ebb8e089f9923bf83ab855b454e")}
-                        className="p-1 rounded text-[#7c6d62] hover:text-[#181311] hover:bg-[#eadecc]/70 transition-colors"
+                        className="p-1.5 rounded-lg transition-colors hover:bg-[#ece9e3]"
+                        style={{ color: "#9b9690" }}
                         title="Copy contract address"
                         aria-label="Copy contract address"
                       >
-                        {copiedAddress ? <Check size={13} className="text-[#1b8a5a]" /> : <Copy size={13} />}
+                        {copiedAddress ? <Check size={13} style={{ color: "#0d9066" }} /> : <Copy size={13} />}
                       </button>
                     </div>
 
@@ -421,7 +415,8 @@ export function LandingPage() {
                       href="https://preprod.midnightexplorer.com/contracts/f36db0fda42e4c3b474bdd06fc72725670ab3ebb8e089f9923bf83ab855b454e"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group inline-flex items-center gap-1.5 text-[12.5px] font-medium text-[#2e2622] hover:text-[#000] shrink-0 transition-colors self-start md:self-auto"
+                      className="group inline-flex items-center gap-1.5 text-[12.5px] font-medium shrink-0 transition-colors self-start md:self-auto"
+                      style={{ color: "#1a1a1a" }}
                     >
                       <span>View Contract Explorer</span>
                       <ArrowRight size={13} className="transition-transform duration-150 group-hover:translate-x-0.5" />
@@ -430,120 +425,221 @@ export function LandingPage() {
                 </div>
               </div>
 
+              {/* Section heading */}
               <div className="mb-12">
-                <span className="font-mono text-[12px] text-[#5f5e5e] tracking-wider uppercase mb-2 block font-semibold">
-                  THE PROBLEM
-                </span>
-                <h2 className="text-[32px] md:text-[38px] font-semibold text-[#1b1c1c] tracking-tight">
-                  Verification shouldn&apos;t require full disclosure.
+                <div
+                  className="mb-4 inline-flex items-center gap-2 rounded-full px-3 py-1 text-[11px] font-medium uppercase tracking-[0.15em]"
+                  style={{
+                    background: "rgba(239,68,68,0.07)",
+                    border: "1px solid rgba(239,68,68,0.20)",
+                    color: "#dc2626",
+                    fontFamily: "var(--font-geist, monospace)",
+                  }}
+                >
+                  <span className="h-1.5 w-1.5 rounded-full bg-[#ef4444] animate-pulse" />
+                  The Problem
+                </div>
+                <h2
+                  className="max-w-2xl leading-[1.06] tracking-tight"
+                  style={{
+                    fontFamily: "var(--font-manrope, Manrope, sans-serif)",
+                    fontSize: "clamp(1.9rem, 3.5vw, 3rem)",
+                    fontWeight: 700,
+                    letterSpacing: "-0.04em",
+                    color: "#111118",
+                  }}
+                >
+                  Verification shouldn&apos;t{" "}
+                  <span style={{ color: "rgba(17,17,24,0.38)" }}>require full disclosure.</span>
                 </h2>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
-                {/* Traditional Over-Exposure Card */}
-                <div className="bg-white border border-[#e4e2e2] rounded-2xl p-6 md:p-8 flex flex-col justify-between shadow-xs">
-                  <div>
-                    <div className="flex items-center justify-between pb-3 border-b border-[#f0eae3] mb-4">
-                      <span className="text-[18px] font-semibold text-[#1b1c1c]">Traditional Verification</span>
-                      <span className="font-mono text-[12px] text-[#ba1a1a] font-medium px-2.5 py-0.5 bg-[#ffdad6]/60 rounded-md">
-                        Over-Exposed
-                      </span>
-                    </div>
+              {/* Two comparison cards */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
 
-                    <p className="text-[14px] text-[#5f5e5e] mb-5">
-                      Current systems require sending raw database rows or identity document scans over the wire.
-                    </p>
-
-                    <div className="bg-[#f5f3f3] rounded-xl p-4 space-y-2.5 font-mono text-[13px] border border-[#e4e2e2]/70 mb-6">
-                      <div className="flex justify-between py-1 border-b border-[#e4e2e2]/40">
-                        <span className="text-[#5f5e5e]">Full Name</span>
-                        <span className="text-[#1b1c1c] font-medium">John Doe</span>
-                      </div>
-                      <div className="flex justify-between py-1 border-b border-[#e4e2e2]/40">
-                        <span className="text-[#5f5e5e]">Age</span>
-                        <span className="text-[#1b1c1c] font-medium">24</span>
-                      </div>
-                      <div className="flex justify-between py-1 border-b border-[#e4e2e2]/40">
-                        <span className="text-[#5f5e5e]">Annual Income</span>
-                        <span className="text-[#1b1c1c] font-medium">$80,000</span>
-                      </div>
-                      <div className="flex justify-between py-1 border-b border-[#e4e2e2]/40">
-                        <span className="text-[#5f5e5e]">Home Address</span>
-                        <span className="text-[#1b1c1c] font-medium truncate max-w-[180px]">
-                          742 Evergreen Terr
-                        </span>
-                      </div>
-                      <div className="flex justify-between py-1">
-                        <span className="text-[#5f5e5e]">National ID</span>
-                        <span className="text-[#1b1c1c] font-medium">981-22-4829</span>
-                      </div>
-                    </div>
+                {/* ── Card Left: Traditional / Over-Exposed ── */}
+                <div
+                  className="flex flex-col rounded-2xl p-6 md:p-8 transition-all duration-300 hover:-translate-y-0.5"
+                  style={{
+                    background: "#ffffff",
+                    border: "1px solid #fecaca",
+                    boxShadow: "0 2px 16px rgba(239,68,68,0.06), 0 1px 4px rgba(0,0,0,0.04)",
+                  }}
+                >
+                  {/* Card header */}
+                  <div
+                    className="flex items-center justify-between pb-4 mb-5"
+                    style={{ borderBottom: "1px solid #fee2e2" }}
+                  >
+                    <span
+                      className="text-[17px] font-semibold"
+                      style={{ fontFamily: "var(--font-manrope, Manrope, sans-serif)", color: "#111118", letterSpacing: "-0.02em" }}
+                    >
+                      Traditional Verification
+                    </span>
+                    <span
+                      className="text-[11px] font-semibold px-2.5 py-1 rounded-lg"
+                      style={{
+                        background: "rgba(239,68,68,0.08)",
+                        border: "1px solid rgba(239,68,68,0.20)",
+                        color: "#dc2626",
+                        fontFamily: "var(--font-geist, monospace)",
+                        letterSpacing: "0.04em",
+                      }}
+                    >
+                      OVER-EXPOSED
+                    </span>
                   </div>
 
-                  <div className="flex items-center gap-2.5 py-2.5 px-3.5 rounded-xl bg-[#fff0ee] border border-[#ffdad6] text-[#ba1a1a] font-mono text-[12px]">
-                    <AlertTriangle size={16} className="shrink-0 text-[#ba1a1a]" />
-                    <span>Verifier receives full raw personal data. Centralized breach risk.</span>
+                  <p className="text-[13.5px] leading-relaxed mb-5" style={{ color: "#6b6880" }}>
+                    Current systems require sending raw database rows or identity document scans over the wire.
+                  </p>
+
+                  {/* Data table */}
+                  <div
+                    className="flex-1 rounded-xl p-4 space-y-0 mb-5"
+                    style={{
+                      background: "#fef2f2",
+                      border: "1px solid #fecaca",
+                      fontFamily: "var(--font-geist, monospace)",
+                    }}
+                  >
+                    {[
+                      { label: "Full Name", value: "John Doe" },
+                      { label: "Age", value: "24" },
+                      { label: "Annual Income", value: "$80,000" },
+                      { label: "Home Address", value: "742 Evergreen Terr" },
+                      { label: "National ID", value: "981-22-4829" },
+                    ].map(({ label, value }, i, arr) => (
+                      <div
+                        key={label}
+                        className="flex justify-between items-center py-2 text-[12.5px]"
+                        style={{ borderBottom: i < arr.length - 1 ? "1px solid rgba(239,68,68,0.12)" : "none" }}
+                      >
+                        <span style={{ color: "#9b7070" }}>{label}</span>
+                        <span style={{ color: "#dc2626", fontWeight: 600 }}>{value}</span>
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* Warning bar */}
+                  <div
+                    className="flex items-center gap-2.5 py-3 px-4 rounded-xl text-[12px] font-medium"
+                    style={{
+                      background: "rgba(239,68,68,0.06)",
+                      border: "1px solid rgba(239,68,68,0.18)",
+                      color: "#dc2626",
+                      fontFamily: "var(--font-geist, monospace)",
+                    }}
+                  >
+                    <AlertTriangle size={15} className="shrink-0" />
+                    Verifier receives full raw personal data. Centralized breach risk.
+                  </div>
+                </div>
+
+                {/* ── Card Right: Nexora Zero-Knowledge ── */}
+                <div
+                  className="flex flex-col rounded-2xl p-6 md:p-8 transition-all duration-300 hover:-translate-y-0.5"
+                  style={{
+                    background: "#ffffff",
+                    border: "1px solid #b6ecd8",
+                    boxShadow: "0 2px 20px rgba(52,211,153,0.10), 0 1px 4px rgba(0,0,0,0.04)",
+                  }}
+                >
+                  {/* Card header */}
+                  <div
+                    className="flex items-center justify-between pb-4 mb-5"
+                    style={{ borderBottom: "1px solid #d1fae5" }}
+                  >
+                    <span
+                      className="text-[17px] font-semibold"
+                      style={{ fontFamily: "var(--font-manrope, Manrope, sans-serif)", color: "#111118", letterSpacing: "-0.02em" }}
+                    >
+                      Nexora Verification
+                    </span>
+                    <span
+                      className="text-[11px] font-semibold px-2.5 py-1 rounded-lg"
+                      style={{
+                        background: "rgba(52,211,153,0.10)",
+                        border: "1px solid rgba(52,211,153,0.28)",
+                        color: "#0d9066",
+                        fontFamily: "var(--font-geist, monospace)",
+                        letterSpacing: "0.04em",
+                      }}
+                    >
+                      ZERO KNOWLEDGE
+                    </span>
+                  </div>
+
+                  <p className="text-[13.5px] leading-relaxed mb-5" style={{ color: "#6b6880" }}>
+                    Sensitive identifiers stay completely client-side. Only mathematical truth assertions are published.
+                  </p>
+
+                  {/* Masked data table */}
+                  <div
+                    className="flex-1 rounded-xl p-4 space-y-0 mb-5"
+                    style={{
+                      background: "#f0fdf8",
+                      border: "1px solid #b6ecd8",
+                      fontFamily: "var(--font-geist, monospace)",
+                    }}
+                  >
+                    {[
+                      { label: "Full Name", w: "w-28" },
+                      { label: "Age", w: "w-16" },
+                      { label: "Annual Income", w: "w-24" },
+                      { label: "Home Address", w: "w-36" },
+                      { label: "National ID", w: "w-32" },
+                    ].map(({ label, w }, i, arr) => (
+                      <div
+                        key={label}
+                        className="flex justify-between items-center py-2 text-[12.5px]"
+                        style={{ borderBottom: i < arr.length - 1 ? "1px solid rgba(52,211,153,0.14)" : "none" }}
+                      >
+                        <span style={{ color: "#4b7a66" }}>{label}</span>
+                        <span
+                          className={`h-3.5 ${w} rounded`}
+                          style={{ background: "rgba(13,144,102,0.15)" }}
+                        />
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* Proof assertion row */}
+                  <div
+                    className="flex items-center justify-between px-4 py-2.5 rounded-xl mb-3 text-[12px]"
+                    style={{
+                      background: "#f0fdf8",
+                      border: "1px solid #b6ecd8",
+                      fontFamily: "var(--font-geist, monospace)",
+                    }}
+                  >
+                    <span style={{ color: "#4b7a66" }}>Proof Assertion:</span>
+                    <span className="flex items-center gap-1.5 font-semibold" style={{ color: "#0d9066" }}>
+                      <CheckCircle2 size={14} />
+                      Requirement satisfied
+                    </span>
+                  </div>
+
+                  {/* Verified banner */}
+                  <div
+                    className="flex items-center gap-2.5 py-3 px-4 rounded-xl text-[12px] font-medium"
+                    style={{
+                      background: "rgba(52,211,153,0.08)",
+                      border: "1px solid rgba(52,211,153,0.22)",
+                      color: "#0d9066",
+                      fontFamily: "var(--font-geist, monospace)",
+                    }}
+                  >
+                    <Verified size={15} className="shrink-0" />
+                    Only the required claim is mathematically proven. Sensitive data never leaves your environment.
                   </div>
                 </div>
 
-                {/* Nexora Masked Zero-Knowledge Card */}
-                <div className="bg-white border-2 border-[#19a974]/40 rounded-2xl p-6 md:p-8 flex flex-col justify-between shadow-xs relative ring-1 ring-[#19a974]/20">
-                  <div>
-                    <div className="flex items-center justify-between pb-3 border-b border-[#f0eae3] mb-4">
-                      <div className="flex items-center gap-2">
-                        <span className="text-[18px] font-semibold text-[#1b1c1c]">Nexora Verification</span>
-                      </div>
-                      <span className="font-mono text-[12px] text-[#006c48] font-medium px-2.5 py-0.5 bg-[#96f6c2]/35 rounded-md border border-[#19a974]/30">
-                        Zero Knowledge
-                      </span>
-                    </div>
-
-                    <p className="text-[14px] text-[#5f5e5e] mb-5">
-                      Sensitive identifiers stay completely client-side. Only mathematical truth assertions are published.
-                    </p>
-
-                    <div className="bg-[#f5f3f3] rounded-xl p-4 space-y-2.5 font-mono text-[13px] border border-[#e4e2e2]/70 mb-6">
-                      <div className="flex justify-between py-1 border-b border-[#e4e2e2]/40 items-center">
-                        <span className="text-[#5f5e5e]">Full Name</span>
-                        <span className="bg-[#1b1c1c]/15 rounded-md h-3.5 w-28" />
-                      </div>
-                      <div className="flex justify-between py-1 border-b border-[#e4e2e2]/40 items-center">
-                        <span className="text-[#5f5e5e]">Age</span>
-                        <span className="bg-[#1b1c1c]/15 rounded-md h-3.5 w-16" />
-                      </div>
-                      <div className="flex justify-between py-1 border-b border-[#e4e2e2]/40 items-center">
-                        <span className="text-[#5f5e5e]">Annual Income</span>
-                        <span className="bg-[#1b1c1c]/15 rounded-md h-3.5 w-24" />
-                      </div>
-                      <div className="flex justify-between py-1 border-b border-[#e4e2e2]/40 items-center">
-                        <span className="text-[#5f5e5e]">Home Address</span>
-                        <span className="bg-[#1b1c1c]/15 rounded-md h-3.5 w-36" />
-                      </div>
-                      <div className="flex justify-between py-1 items-center">
-                        <span className="text-[#5f5e5e]">National ID</span>
-                        <span className="bg-[#1b1c1c]/15 rounded-md h-3.5 w-32" />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="space-y-2.5">
-                    <div className="flex items-center justify-between px-3.5 py-2 bg-[#fbf9f8] rounded-xl border border-[#e4e2e2]">
-                      <span className="font-mono text-[12px] text-[#5f5e5e]">Proof Assertion:</span>
-                      <span className="font-mono text-[12px] text-[#006c48] font-semibold flex items-center gap-1.5">
-                        <CheckCircle2 size={15} />
-                        Requirement satisfied
-                      </span>
-                    </div>
-
-                    <div className="flex items-center gap-2.5 py-2.5 px-3.5 rounded-xl bg-[#eef8f3] border border-[#a3dfbe]/50 text-[#006c48] font-mono text-[12px]">
-                      <Verified size={16} className="shrink-0 text-[#006c48]" />
-                      <span>Only the required claim is mathematically proven. Sensitive data never leaves your environment.</span>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </section>
+
 
           {/* ============================================================== */}
           {/* SECTION: HOW IT WORKS — Premium light editorial                 */}
