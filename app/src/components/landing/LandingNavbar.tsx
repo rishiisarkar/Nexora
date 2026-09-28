@@ -127,7 +127,7 @@ export function LandingNavbar() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 bg-[#fcfbfa]/85 backdrop-blur-md border-b border-[#e9e8e7]/80 transition-colors">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-[#e9e8e7]/80 transition-colors">
         <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           {/* Left: Brand & Nav links */}
           <div className="flex items-center gap-8">
@@ -137,11 +137,11 @@ export function LandingNavbar() {
               onClick={() => setMenuOpen(false)}
             >
               <Image
-                src="/stitch/5e7077903d6849efbf0c19a4d13b7d75.png"
-                alt="Nexora Emblem Logo"
-                width={30}
-                height={30}
-                className="h-7 w-auto object-contain"
+                src="/logo.png"
+                alt="Nexora Logo"
+                width={32}
+                height={32}
+                className="h-7 w-7 rounded-md object-contain"
                 priority
               />
               <span className="text-[17px] font-semibold tracking-tight text-[#1b1c1c] font-sans">

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Copy, Check, ExternalLink } from "lucide-react";
 import { useState } from "react";
 
@@ -24,7 +25,7 @@ export function LandingFooter() {
   };
 
   return (
-    <footer className="w-full bg-[#fbf7ee] pt-16 sm:pt-20 text-[#1b1c1c] overflow-visible">
+    <footer id="contact" className="w-full bg-[#fbf7ee] pt-16 sm:pt-20 text-[#1b1c1c] overflow-visible">
       {/* ============================================================== */}
       {/* THE SIGNATURE DARK FOOTER (Full Width)                         */}
       {/* ============================================================== */}
@@ -61,56 +62,18 @@ export function LandingFooter() {
         </div>
 
         {/* ========================================================== */}
-        {/* TOP CENTER: GREEN TOPOGRAPHIC ASTERISK EMBLEM              */}
+        {/* TOP CENTER: NEXORA LOGO EMBLEM                             */}
         {/* Perching halfway out the top border                        */}
         {/* ========================================================== */}
-        <div className="absolute -top-12 sm:-top-16 left-1/2 -translate-x-1/2 z-20">
-          <div className="relative w-24 h-24 sm:w-28 sm:h-28 filter drop-shadow-[0_12px_24px_rgba(0,212,134,0.3)] transition-transform hover:scale-105 duration-300">
-            <svg viewBox="0 0 100 100" className="w-full h-full">
-              <defs>
-                <mask id="topographic-asterisk-mask">
-                  <rect x="38" y="2" width="24" height="96" rx="12" fill="white" />
-                  <rect
-                    x="38"
-                    y="2"
-                    width="24"
-                    height="96"
-                    rx="12"
-                    fill="white"
-                    transform="rotate(60 50 50)"
-                  />
-                  <rect
-                    x="38"
-                    y="2"
-                    width="24"
-                    height="96"
-                    rx="12"
-                    fill="white"
-                    transform="rotate(120 50 50)"
-                  />
-                </mask>
-                <linearGradient id="topoGreenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stopColor="#00e68a" />
-                  <stop offset="50%" stopColor="#00b368" />
-                  <stop offset="100%" stopColor="#007a47" />
-                </linearGradient>
-              </defs>
-
-              <g mask="url(#topographic-asterisk-mask)">
-                <rect width="100" height="100" fill="#003d24" />
-                <ellipse cx="50" cy="50" rx="46" ry="46" fill="none" stroke="#00e68a" strokeWidth="2" opacity="0.9" />
-                <ellipse cx="50" cy="50" rx="40" ry="38" fill="none" stroke="#00b368" strokeWidth="2.5" opacity="0.8" />
-                <ellipse cx="50" cy="50" rx="34" ry="32" fill="none" stroke="#00ff99" strokeWidth="2.5" opacity="0.9" />
-                <ellipse cx="50" cy="50" rx="28" ry="25" fill="none" stroke="#00e68a" strokeWidth="3" opacity="0.95" />
-                <ellipse cx="50" cy="50" rx="22" ry="19" fill="none" stroke="#52ffb8" strokeWidth="3" />
-                <ellipse cx="50" cy="50" rx="16" ry="13" fill="none" stroke="#00e68a" strokeWidth="2.5" />
-                <ellipse cx="50" cy="50" rx="10" ry="8" fill="none" stroke="#a3ffd4" strokeWidth="2.5" />
-                <circle cx="50" cy="50" r="4" fill="#00ff99" />
-                <path d="M10 30 Q 50 60 90 20" fill="none" stroke="#00e68a" strokeWidth="2" opacity="0.6" />
-                <path d="M15 70 Q 50 35 85 80" fill="none" stroke="#00ff99" strokeWidth="2" opacity="0.6" />
-                <path d="M30 10 Q 60 50 30 90" fill="none" stroke="#52ffb8" strokeWidth="2" opacity="0.6" />
-              </g>
-            </svg>
+        <div className="absolute -top-10 sm:-top-12 left-1/2 -translate-x-1/2 z-20">
+          <div className="relative w-20 h-20 sm:w-24 sm:h-24 p-1.5 rounded-2xl bg-[#171816] border border-[#2b3528] shadow-[0_12px_28px_rgba(202,254,124,0.25)] transition-transform hover:scale-105 duration-300 flex items-center justify-center">
+            <Image
+              src="/logo.png"
+              alt="Nexora Platform Logo"
+              width={96}
+              height={96}
+              className="w-full h-full object-contain rounded-xl"
+            />
           </div>
         </div>
 

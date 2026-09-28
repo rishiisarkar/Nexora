@@ -118,7 +118,7 @@ export default function RotatingEmblem() {
     let animId: number;
 
     textureLoader.load(
-      "/stitch/Nexora-emblem-cropped.png",
+      "/logo.png",
       (texture) => {
         texture.colorSpace = THREE.SRGBColorSpace;
         texture.minFilter = THREE.LinearMipmapLinearFilter;
