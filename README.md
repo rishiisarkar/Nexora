@@ -5,6 +5,10 @@
  * **Live demo:** [Nexora](https://nexora-app-web3.vercel.app/)  |  **Official Product X Handle:** [@NexoraWeb3x](https://x.com/NexoraWeb3x/)
   <h3>Privacy-First Zero-Knowledge Access Control on Midnight Network</h3>
   <p><i>Prove you're authorized — without revealing who you are.</i></p>
+  
+  ## **Official (Nexora) Product Logo:** 
+  
+<img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/e87def74-b5f0-4ed2-a1f8-903856aa94f7" />
 
   <br />
   <img src="https://img.shields.io/badge/Midnight_Network-000000?style=for-the-badge" alt="Midnight Network" />
