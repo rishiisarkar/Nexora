@@ -272,9 +272,9 @@ Public blockchain wallet addresses are treated as public identifiers.
 | X / Twitter          | https://x.com/NexoraWeb3x/                                                                                      |
 | Demo Video           | https://drive.google.com/file/d/1cAb_dis5CkSjRz4XW3x5RSnGYpUv2BDh/view?usp=sharing                              |
 | Feedback Form        | https://forms.gle/ShbFDAme1TiP7FRYA                                                                             |
-| Feedback Spreadsheet | https://docs.google.com/spreadsheets/d/15vLOWZlfG9bBFbDRfPmD1uYHZlk1dcgLbbNT8eNDcPQ/edit?usp=sharing            |
+| Feedback Spreadsheet | https://docs.google.com/spreadsheets/d/15vLOWZlfbG9BFbDRfPmD1uYHZlk1dcgLbbNT8eNDcPQ/edit?usp=sharing            |
 | Preprod Contract     | `0xf36db0fda42e4c3b474bdd06fc72725670ab3ebb8e089f9923bf83ab855b454e`                                            |
-| Preprod Explorer     | https://preprod.midnightexplorer.com/contracts/0xf36db0fda42e4c3b474bdd06fc72725670ab3ebb8e089f9923bf83ab855b454e |
+| Preprod Explorer     | https://preprod.midnightexplorer.com/contracts/f36db0fda42e4c3b474bdd06fc72725670ab3ebb8e089f9923bf83ab855b454e |
 
 ---
 

@@ -182,14 +182,14 @@ Follow **Nexora** on X for product updates, Midnight development progress, priva
 | **Demo Video** |[Watch the Nexora Demo Video on Google Drive](https://drive.google.com/file/d/1cAb_dis5CkSjRz4XW3x5RSnGYpUv2BDh/view?usp=sharing) |
 | CI/CD pipeline running (workflow file + passing runs)                 |               ✅ **Passed**                |
 
-> Preprod deployed. Verify the new address on [Midnight Preprod Explorer](https://preprod.midnightexplorer.com/contracts/85c6d5ce4fec74c33a17d4307290bf7d05878637b9f2e70bead1d90bdf5353cc) 
+> Preprod deployed. Verify the new address on [Midnight Preprod Explorer](https://preprod.midnightexplorer.com/contracts/f36db0fda42e4c3b474bdd06fc72725670ab3ebb8e089f9923bf83ab855b454e) 
 
 ---
 ## 🔎 Explorer Verification (Preview NetWork)
 
 | Resource | Link                                                                                                                                                                        |
 | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Explorer | [Midnight Preprod Explorer](https://preprod.midnightexplorer.com/contracts/85c6d5ce4fec74c33a17d4307290bf7d05878637b9f2e70bead1d90bdf5353cc)                                                                                                        |
+| Explorer | [Midnight Preprod Explorer](https://preprod.midnightexplorer.com/contracts/f36db0fda42e4c3b474bdd06fc72725670ab3ebb8e089f9923bf83ab855b454e)                                                                                                        |
 | Contract | [0xf36db0fda42e4c3b474bdd06fc72725670ab3ebb8e089f9923bf83ab855b454e](https://preprod.midnightexplorer.com/contracts/f36db0fda42e4c3b474bdd06fc72725670ab3ebb8e089f9923bf83ab855b454e) |
 
 # 🏆 Nexora — Level 6 Requirements & Submission Checklist
@@ -215,7 +215,7 @@ Follow **Nexora** on X for product updates, Midnight development progress, priva
 | **Public GitHub repository with updated documentation** | https://github.com/rishiisarkar/Nexora                                                                               | 🟢 **Completed** |
 | **Live demo link**                                      | https://nexora-app-web3.vercel.app/                                                                                  | 🟢 **Completed** |
 | **Midnight Preprod contract address**                   | `0xf36db0fda42e4c3b474bdd06fc72725670ab3ebb8e089f9923bf83ab855b454e`                                                 | 🟢 **Completed** |
-| **Verifiable Preprod deployment**                       | https://preprod.midnightexplorer.com/contracts/85c6d5ce4fec74c33a17d4307290bf7d05878637b9f2e70bead1d90bdf5353cc      | 🟢 **Completed** |
+| **Verifiable Preprod deployment**                       | https://preprod.midnightexplorer.com/contracts/f36db0fda42e4c3b474bdd06fc72725670ab3ebb8e089f9923bf83ab855b454e      | 🟢 **Completed** |
 | **70 Preprod user wallet addresses**                    | 70+ Midnight Preprod tester wallets with verifiable on-chain activity                                                | 🟢 **Completed** |
 | **Feedback documentation / feedback link**              | Feedback Form: https://forms.gle/ShbFDAme1TiP7FRYA                                                                   | 🟢 **Completed** |
 | **Feedback response data**                              | Google Sheets: https://docs.google.com/spreadsheets/d/15vLOWZlfbG9BFbDRfPmD1uYHZlk1dcgLbbNT8eNDcPQ/edit?usp=sharing  | 🟢 **Completed** |
