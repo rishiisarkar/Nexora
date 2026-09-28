@@ -178,8 +178,8 @@ export function LandingNavbar() {
               <button
                 type="button"
                 className={`h-[36px] inline-flex items-center gap-2 px-3.5 rounded-xl text-[13px] font-medium transition-all shadow-xs border ${walletAddress
-                    ? "bg-[#eef8f3] border-[#a3dfbe] text-[#006c48] hover:bg-[#e4f4ec]"
-                    : "bg-white border-[#e4e2e2] text-[#241d1a] hover:bg-[#f6f4f2]"
+                  ? "bg-[#eef8f3] border-[#a3dfbe] text-[#006c48] hover:bg-[#e4f4ec]"
+                  : "bg-white border-[#e4e2e2] text-[#241d1a] hover:bg-[#f6f4f2]"
                   }`}
                 onClick={walletAddress ? () => setWalletMenuOpen((v) => !v) : openWalletSelector}
                 disabled={walletConnecting}
