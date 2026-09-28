@@ -4,11 +4,21 @@ import Link from "next/link";
 import { ArrowRight, Copy, Check, ExternalLink } from "lucide-react";
 import { useState } from "react";
 
+const CONTRACT_ADDRESS = "0xf36db0fda42e4c3b474bdd06fc72725670ab3ebb8e089f9923bf83ab855b454e";
+const CONTRACT_SHORT = "0xf36db0fd...5b454e";
+const EXPLORER_URL = "https://preprod.midnightexplorer.com/contracts/f36db0fda42e4c3b474bdd06fc72725670ab3ebb8e089f9923bf83ab855b454e";
+const LIVE_APP_URL = "https://nexora-app-web3.vercel.app/";
+const GITHUB_URL = "https://github.com/rishiisarkar/Nexora";
+const X_HANDLE_URL = "https://x.com/NexoraWeb3x/";
+const FEEDBACK_FORM_URL = "https://forms.gle/ShbFDAme1TiP7FRYA";
+const FEEDBACK_SHEET_URL = "https://docs.google.com/spreadsheets/d/15vLOWZlfbG9BFbDRfPmD1uYHZlk1dcgLbbNT8eNDcPQ/edit?usp=sharing";
+const DEMO_VIDEO_URL = "https://drive.google.com/file/d/1cAb_dis5CkSjRz4XW3x5RSnGYpUv2BDh/view?usp=sharing";
+
 export function LandingFooter() {
   const [copied, setCopied] = useState(false);
 
   const handleCopyContract = () => {
-    navigator.clipboard.writeText("0xa6fb686b5fd483e86b8010eaa3cbaa28f2a00d16dfe9097b2130e82f1a8add19");
+    navigator.clipboard.writeText(CONTRACT_ADDRESS);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -52,13 +62,12 @@ export function LandingFooter() {
 
         {/* ========================================================== */}
         {/* TOP CENTER: GREEN TOPOGRAPHIC ASTERISK EMBLEM              */}
-        {/* Perching halfway out the top border, exactly as reference  */}
+        {/* Perching halfway out the top border                        */}
         {/* ========================================================== */}
         <div className="absolute -top-12 sm:-top-16 left-1/2 -translate-x-1/2 z-20">
           <div className="relative w-24 h-24 sm:w-28 sm:h-28 filter drop-shadow-[0_12px_24px_rgba(0,212,134,0.3)] transition-transform hover:scale-105 duration-300">
             <svg viewBox="0 0 100 100" className="w-full h-full">
               <defs>
-                {/* Mask defining 6-lobed rounded asterisk from reference */}
                 <mask id="topographic-asterisk-mask">
                   <rect x="38" y="2" width="24" height="96" rx="12" fill="white" />
                   <rect
@@ -87,12 +96,8 @@ export function LandingFooter() {
                 </linearGradient>
               </defs>
 
-              {/* Masked group with green topographic contour rings */}
               <g mask="url(#topographic-asterisk-mask)">
-                {/* Dark base fill */}
                 <rect width="100" height="100" fill="#003d24" />
-
-                {/* Flowing topographic elevation rings */}
                 <ellipse cx="50" cy="50" rx="46" ry="46" fill="none" stroke="#00e68a" strokeWidth="2" opacity="0.9" />
                 <ellipse cx="50" cy="50" rx="40" ry="38" fill="none" stroke="#00b368" strokeWidth="2.5" opacity="0.8" />
                 <ellipse cx="50" cy="50" rx="34" ry="32" fill="none" stroke="#00ff99" strokeWidth="2.5" opacity="0.9" />
@@ -101,8 +106,6 @@ export function LandingFooter() {
                 <ellipse cx="50" cy="50" rx="16" ry="13" fill="none" stroke="#00e68a" strokeWidth="2.5" />
                 <ellipse cx="50" cy="50" rx="10" ry="8" fill="none" stroke="#a3ffd4" strokeWidth="2.5" />
                 <circle cx="50" cy="50" r="4" fill="#00ff99" />
-
-                {/* Organic crossing topographic ridges */}
                 <path d="M10 30 Q 50 60 90 20" fill="none" stroke="#00e68a" strokeWidth="2" opacity="0.6" />
                 <path d="M15 70 Q 50 35 85 80" fill="none" stroke="#00ff99" strokeWidth="2" opacity="0.6" />
                 <path d="M30 10 Q 60 50 30 90" fill="none" stroke="#52ffb8" strokeWidth="2" opacity="0.6" />
@@ -124,10 +127,10 @@ export function LandingFooter() {
               Where cryptographic privacy begins
             </p>
 
-            {/* Two Action Pills matching reference */}
+            {/* Action Pills */}
             <div className="mt-7 flex flex-wrap items-center justify-center gap-3.5 sm:gap-4">
               <a
-                href="https://Nexora-app.vercel.app/"
+                href={LIVE_APP_URL}
                 target="_blank"
                 rel="noreferrer"
                 className="h-11 px-7 rounded-full bg-[#00d486] hover:bg-[#00be77] text-[#082417] font-semibold text-[14px] inline-flex items-center gap-2 shadow-[0_4px_18px_rgba(0,212,134,0.36)] transition-all hover:scale-[1.03] active:scale-[0.98]"
@@ -147,137 +150,150 @@ export function LandingFooter() {
           </div>
 
           {/* ========================================================== */}
-          {/* THREE-COLUMN LOWER BODY (Contact, Social, Snel naar)       */}
+          {/* THREE-COLUMN LOWER BODY (Contact, Links, Navigation)       */}
           {/* ========================================================== */}
           <div className="mt-14 sm:mt-18 pt-10 border-t border-[#262824] grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-10 items-start">
-            {/* Left Column: Contact & Node Details */}
+            {/* Left Column: Contact & Infrastructure */}
             <div className="md:col-span-4 flex flex-col justify-between">
               <div>
                 <h3 className="text-[16px] font-semibold text-[#fbf7ee] mb-3">
-                  Contact & Infrastructure
+                  Contact &amp; Infrastructure
                 </h3>
-                <div className="space-y-1 text-[13.5px] text-[#c4bdae] leading-relaxed">
+                <div className="space-y-1.5 text-[13.5px] text-[#c4bdae] leading-relaxed">
                   <p className="font-mono text-[#86efac]">Midnight PREVIEW Live Node</p>
                   <p>WASM Zero-Knowledge Prover · 480ms Latency</p>
                   <div className="flex items-center gap-2 pt-0.5">
-                    <span className="font-mono text-[12px] text-[#a49d8e] truncate max-w-[240px]">
-                      0xa6fb686b5fd4...add19
+                    <span className="font-mono text-[12px] text-[#a49d8e] truncate max-w-[240px]" title={CONTRACT_ADDRESS}>
+                      {CONTRACT_SHORT}
                     </span>
                     <button
                       onClick={handleCopyContract}
                       className="p-1 rounded hover:bg-white/10 text-[#86efac] transition-colors"
                       title="Copy Contract Address"
+                      aria-label="Copy Contract Address"
                     >
                       {copied ? <Check size={13} /> : <Copy size={13} />}
                     </button>
                   </div>
                   <p className="text-[13px] text-[#00d486] pt-1">
-                    <a href="https://Nexora-app.vercel.app/" target="_blank" rel="noreferrer" className="hover:underline">
-                      Nexora-app.vercel.app
+                    <a href={LIVE_APP_URL} target="_blank" rel="noreferrer" className="hover:underline">
+                      nexora-app-web3.vercel.app
                     </a>
                   </p>
                 </div>
               </div>
 
-              {/* Score Pill & Badges matching "7.9 Leadingcourses score" */}
+              {/* Status Badges */}
               <div className="mt-6 flex flex-col gap-2.5">
                 <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#12281e] border border-[#1f4834] text-[12px] font-medium text-[#86efac] w-fit">
                   <span className="w-5 h-5 rounded-full bg-[#00d486] text-[#061f13] flex items-center justify-center font-bold text-[11px]">
                     70+
                   </span>
-                  <span>Midnight Preprod Verified</span>
+                  <span>Midnight Preprod Verified Users</span>
                 </div>
 
-                {/* Micro Partner Flag Badges */}
-                <div className="flex items-center gap-2 text-[10px] text-[#8c8577] font-mono">
-                  <span className="px-1.5 py-0.5 rounded bg-white/5 border border-white/10">MIDNIGHT</span>
-                  <span className="px-1.5 py-0.5 rounded bg-white/5 border border-white/10">CARDANO</span>
-                  <span className="px-1.5 py-0.5 rounded bg-white/5 border border-white/10">WASM</span>
-                  <span className="px-1.5 py-0.5 rounded bg-white/5 border border-white/10">COMPACT</span>
+                <div className="flex flex-wrap items-center gap-1.5 text-[10px] text-[#8c8577] font-mono">
+                  <span className="px-1.5 py-0.5 rounded bg-white/5 border border-white/10">MIDNIGHT PREPROD</span>
+                  <span className="px-1.5 py-0.5 rounded bg-white/5 border border-white/10">ZK-SNARKS</span>
+                  <span className="px-1.5 py-0.5 rounded bg-white/5 border border-white/10">REPLAY-PROTECTION</span>
                 </div>
               </div>
             </div>
 
-            {/* Middle Column: Social & Protocol Links (with green arrow ↗) */}
-            <div className="md:col-span-3">
-              <ul className="space-y-2.5 text-[14px]">
+            {/* Middle Column: Official Links & Verification Deliverables */}
+            <div className="md:col-span-4">
+              <h3 className="text-[16px] font-semibold text-[#fbf7ee] mb-3">
+                Protocol &amp; Submission Links
+              </h3>
+              <ul className="space-y-2.5 text-[13.5px]">
                 <li>
                   <a
-                    href="https://x.com/NexoraWeb3/"
+                    href={LIVE_APP_URL}
                     target="_blank"
                     rel="noreferrer"
                     className="text-[#e8e2d5] hover:text-[#00d486] transition-colors inline-flex items-center gap-1.5 group"
                   >
-                    <span>X (Twitter)</span>
+                    <span>🌐 Live Web Application</span>
                     <span className="text-[#00d486] text-[12px] group-hover:translate-x-0.5 transition-transform">↗</span>
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://github.com/Shritii-Patel/Nexora"
+                    href={GITHUB_URL}
                     target="_blank"
                     rel="noreferrer"
                     className="text-[#e8e2d5] hover:text-[#00d486] transition-colors inline-flex items-center gap-1.5 group"
                   >
-                    <span>Public GitHub Repository</span>
+                    <span>💻 Public GitHub Repository</span>
                     <span className="text-[#00d486] text-[12px] group-hover:translate-x-0.5 transition-transform">↗</span>
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://explorer.1am.xyz/contract/a6fb686b5fd483e86b8010eaa3cbaa28f2a00d16dfe9097b2130e82f1a8add19"
+                    href={EXPLORER_URL}
                     target="_blank"
                     rel="noreferrer"
                     className="text-[#e8e2d5] hover:text-[#00d486] transition-colors inline-flex items-center gap-1.5 group"
                   >
-                    <span>Preprod Contract Explorer</span>
+                    <span>🔍 Preprod Contract Explorer</span>
                     <span className="text-[#00d486] text-[12px] group-hover:translate-x-0.5 transition-transform">↗</span>
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://forms.gle/gjAijrpqCXcb2Z6m9"
+                    href={X_HANDLE_URL}
                     target="_blank"
                     rel="noreferrer"
                     className="text-[#e8e2d5] hover:text-[#00d486] transition-colors inline-flex items-center gap-1.5 group"
                   >
-                    <span>User Feedback Form</span>
+                    <span>🐦 Official Product X (@NexoraWeb3x)</span>
                     <span className="text-[#00d486] text-[12px] group-hover:translate-x-0.5 transition-transform">↗</span>
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://docs.google.com/spreadsheets/d/1w4VrdXyHe97cSr8v7JyBOvFp2nHmf2gRNNogB7RxByo/edit?usp=sharing"
+                    href={FEEDBACK_FORM_URL}
                     target="_blank"
                     rel="noreferrer"
                     className="text-[#e8e2d5] hover:text-[#00d486] transition-colors inline-flex items-center gap-1.5 group"
                   >
-                    <span>Feedback Google Sheet</span>
+                    <span>📝 User Feedback Collection Form</span>
                     <span className="text-[#00d486] text-[12px] group-hover:translate-x-0.5 transition-transform">↗</span>
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://drive.google.com/file/d/1cAb_dis5CkSjRz4XW3x5RSnGYpUv2BDh/view?usp=sharing"
+                    href={FEEDBACK_SHEET_URL}
                     target="_blank"
                     rel="noreferrer"
                     className="text-[#e8e2d5] hover:text-[#00d486] transition-colors inline-flex items-center gap-1.5 group"
                   >
-                    <span>Nexora Demo Video</span>
+                    <span>📊 User Feedback Google Sheet</span>
+                    <span className="text-[#00d486] text-[12px] group-hover:translate-x-0.5 transition-transform">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href={DEMO_VIDEO_URL}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-[#e8e2d5] hover:text-[#00d486] transition-colors inline-flex items-center gap-1.5 group"
+                  >
+                    <span>🎥 Demo Video Walkthrough</span>
                     <span className="text-[#00d486] text-[12px] group-hover:translate-x-0.5 transition-transform">↗</span>
                   </a>
                 </li>
               </ul>
             </div>
 
-            {/* Right Column: "Snel naar" Quick Navigation Matrix */}
-            <div className="md:col-span-5">
+            {/* Right Column: Quick Navigation */}
+            <div className="md:col-span-4">
               <h3 className="text-[16px] font-semibold text-[#fbf7ee] mb-3">
-                Snel naar
+                Quick Navigation
               </h3>
-              <div className="grid grid-cols-2 gap-x-6 gap-y-2.5 text-[14px]">
+              <div className="grid grid-cols-2 gap-x-4 gap-y-2.5 text-[13.5px]">
                 <a
-                  href="https://Nexora-app.vercel.app/"
+                  href={LIVE_APP_URL}
                   target="_blank"
                   rel="noreferrer"
                   className="text-[#e8e2d5] hover:text-[#00d486] transition-colors inline-flex items-center gap-1"
@@ -295,12 +311,12 @@ export function LandingFooter() {
                   Credential Vault
                 </Link>
                 <a
-                  href="https://explorer.1am.xyz/contract/a6fb686b5fd483e86b8010eaa3cbaa28f2a00d16dfe9097b2130e82f1a8add19"
+                  href={EXPLORER_URL}
                   target="_blank"
                   rel="noreferrer"
                   className="text-[#e8e2d5] hover:text-[#00d486] transition-colors inline-flex items-center gap-1"
                 >
-                  <span>Contract Explorer</span>
+                  <span>Explorer</span>
                   <ExternalLink size={11} className="opacity-60" />
                 </a>
                 <a
@@ -313,16 +329,16 @@ export function LandingFooter() {
                   <ExternalLink size={11} className="opacity-60" />
                 </a>
                 <a
-                  href="https://forms.gle/gjAijrpqCXcb2Z6m9"
+                  href={FEEDBACK_FORM_URL}
                   target="_blank"
                   rel="noreferrer"
                   className="text-[#e8e2d5] hover:text-[#00d486] transition-colors inline-flex items-center gap-1"
                 >
-                  <span>User Feedback</span>
+                  <span>Feedback Form</span>
                   <ExternalLink size={11} className="opacity-60" />
                 </a>
                 <a
-                  href="https://drive.google.com/file/d/1cAb_dis5CkSjRz4XW3x5RSnGYpUv2BDh/view?usp=sharing"
+                  href={DEMO_VIDEO_URL}
                   target="_blank"
                   rel="noreferrer"
                   className="text-[#e8e2d5] hover:text-[#00d486] transition-colors inline-flex items-center gap-1"
@@ -331,18 +347,23 @@ export function LandingFooter() {
                   <ExternalLink size={11} className="opacity-60" />
                 </a>
               </div>
+
+              {/* Privacy highlights card */}
+              <div className="mt-5 p-3 rounded-xl bg-white/[0.04] border border-white/[0.08] text-[11.5px] text-[#c4bdae] leading-relaxed">
+                <p className="font-medium text-[#86efac] mb-1">🔐 Privacy-Preserving Verification</p>
+                <p>Proves authorized membership via Zero-Knowledge proof without exposing raw credentials, Merkle inclusion paths, or private witness values.</p>
+              </div>
             </div>
           </div>
 
           {/* ========================================================== */}
-          {/* BOTTOM BAR: Ivory Rounded Policy Pill (Exact Match)        */}
+          {/* BOTTOM BAR: Ivory Rounded Policy Pill                      */}
           {/* ========================================================== */}
           <div className="mt-12 pt-6 border-t border-[#262824] flex flex-col sm:flex-row items-center justify-between gap-4">
             <span className="text-[12px] font-mono text-[#8a8375]">
               Nexora · Zero-Knowledge Cryptographic Privacy on Midnight Preprod
             </span>
 
-            {/* Distinctive Ivory Rounded Pill from Reference */}
             <div className="inline-flex items-center gap-3 sm:gap-4 px-5 py-2 rounded-full bg-[#fbf7ee] text-[#1b1c1c] text-[12px] font-medium shadow-xs">
               <Link href="/#privacy" className="hover:text-[#006c48] transition-colors">
                 Cookies policy

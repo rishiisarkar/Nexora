@@ -165,7 +165,7 @@ export function LandingNavbar() {
           {/* Right: Actions */}
           <div className="flex items-center gap-3">
             <a
-              href="https://github.com/Shritii-Patel/Nexora"
+              href="https://github.com/rishiisarkar/Nexora"
               target="_blank"
               rel="noreferrer"
               className="hidden lg:inline-flex items-center text-[14px] text-[#5f5e5e] hover:text-[#1b1c1c] font-medium transition-colors px-1"
@@ -299,7 +299,7 @@ export function LandingNavbar() {
                 Credential Vault
               </Link>
               <a
-                href="https://github.com/Shritii-Patel/Nexora"
+                href="https://github.com/rishiisarkar/Nexora"
                 target="_blank"
                 rel="noreferrer"
                 className="py-1.5 text-[15px] font-medium text-[#5f5e5e] hover:text-[#1b1c1c] transition-colors flex items-center gap-1.5"

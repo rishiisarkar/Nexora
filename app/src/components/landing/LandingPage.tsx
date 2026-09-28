@@ -324,7 +324,7 @@ export function LandingPage() {
                     <div className="flex flex-wrap items-center gap-2 sm:gap-2.5 text-[12px]">
                       <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-[#eee2d6]/75 border border-[#ddcfc1] font-mono text-[#2c231f]">
                         <span className="w-1.5 h-1.5 rounded-full bg-[#1b8a5a]" />
-                        <span>Verified Contract <span className="font-semibold text-[#181311]">0794f000...f56123</span></span>
+                        <span>Verified Contract <span className="font-semibold text-[#181311]">f36db0fd...5b454e</span></span>
                       </div>
 
                       <div className="flex items-center gap-1.5 text-[#5c4f46] px-2 py-0.5">
@@ -347,11 +347,11 @@ export function LandingPage() {
                       </span>
                       <span className="text-[#cbbeaf] hidden sm:inline" aria-hidden="true">:</span>
                       <code className="font-mono text-[12px] text-[#241d1a] bg-[#f0e4d9]/85 px-3 py-1 rounded-md border border-[#decfc1] select-all break-all sm:break-normal">
-                        0xa6fb686b5fd483e86b8010eaa3cbaa28f2a00d16dfe9097b2130e82f1a8add19
+                        0xf36db0fda42e4c3b474bdd06fc72725670ab3ebb8e089f9923bf83ab855b454e
                       </code>
                       <button
                         type="button"
-                        onClick={() => handleCopyAddress("0xa6fb686b5fd483e86b8010eaa3cbaa28f2a00d16dfe9097b2130e82f1a8add19")}
+                        onClick={() => handleCopyAddress("0xf36db0fda42e4c3b474bdd06fc72725670ab3ebb8e089f9923bf83ab855b454e")}
                         className="p-1 rounded text-[#7c6d62] hover:text-[#181311] hover:bg-[#eadecc]/70 transition-colors"
                         title="Copy contract address"
                         aria-label="Copy contract address"
@@ -361,7 +361,7 @@ export function LandingPage() {
                     </div>
 
                     <a
-                      href="https://explorer.1am.xyz/contract/a6fb686b5fd483e86b8010eaa3cbaa28f2a00d16dfe9097b2130e82f1a8add19"
+                      href="https://preprod.midnightexplorer.com/contracts/f36db0fda42e4c3b474bdd06fc72725670ab3ebb8e089f9923bf83ab855b454e"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="group inline-flex items-center gap-1.5 text-[12.5px] font-medium text-[#2e2622] hover:text-[#000] shrink-0 transition-colors self-start md:self-auto"
@@ -777,7 +777,7 @@ export function LandingPage() {
                 </Link>
 
                 <a
-                  href="https://github.com/Shritii-Patel/Nexora"
+                  href="https://github.com/rishiisarkar/Nexora"
                   target="_blank"
                   rel="noreferrer"
                   className="h-[42px] inline-flex items-center px-6 rounded-xl bg-white border border-[#e4e2e2] text-[#1b1c1c] font-medium text-[14px] hover:bg-[#f6f4f2] transition-colors shadow-xs"
