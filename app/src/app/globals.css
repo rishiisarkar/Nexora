@@ -54,6 +54,10 @@
   --font-mono: "JetBrains Mono", "Fira Code", Menlo, ui-monospace, monospace;
   --font-mono-stack: var(--font-mono);
 
+  /* Google Fonts — loaded via next/font in layout.tsx */
+  --font-manrope: var(--font-manrope, Manrope, ui-sans-serif, system-ui, sans-serif);
+  --font-geist: var(--font-geist, Geist, ui-sans-serif, system-ui, sans-serif);
+
   --radius-DEFAULT: 1rem;
   --radius-lg: 1rem;
   --radius-xl: 1.25rem;

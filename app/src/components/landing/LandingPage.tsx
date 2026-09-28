@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import {
   AlertTriangle,
@@ -58,181 +59,237 @@ export function LandingPage() {
       <main className="w-full pt-16 bg-[#fcfbfa]">
         <div className="flex flex-col w-full">
           {/* ============================================================== */}
-          {/* HERO SECTION - Warm studio gradient with titanium card photo  */}
+          {/* HERO SECTION - Minimalist Hero with hero.png background         */}
           {/* ============================================================== */}
           <section
-            id="product"
-            className="relative w-full min-h-[600px] lg:min-h-[660px] flex items-center pt-8 pb-16 sm:pb-20 lg:pt-12 lg:pb-24 px-4 sm:px-6 md:px-12 lg:px-16 overflow-hidden bg-gradient-to-b from-[#fbf8f5] via-[#f7f2ed] to-[#f6eee7]"
+            id="hero"
+            className="relative min-h-[92vh] lg:min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden"
           >
-            {/* Soft warm diffused ambient glow */}
-            <div className="absolute top-1/4 right-[10%] w-[520px] h-[520px] rounded-full bg-gradient-to-br from-[#f2dfcf]/45 via-[#ecd4c2]/35 to-transparent blur-3xl pointer-events-none -z-0" />
-            <div className="absolute -bottom-10 left-10 w-[420px] h-[420px] rounded-full bg-gradient-to-tr from-[#f3e5d8]/40 to-transparent blur-3xl pointer-events-none -z-0" />
+            {/* ─────────────────────────────────────────────
+      HERO BACKGROUND
+  ───────────────────────────────────────────── */}
+            <div className="absolute inset-0 z-0">
+              <Image
+                src="/hero.png"
+                alt="Nexora Zero-Knowledge Verification"
+                fill
+                priority
+                quality={95}
+                className="object-cover object-center select-none"
+              />
 
-            {/* ============================================================== */}
-            {/* Rich dark cream blurry smoke effect merging into next section  */}
-            {/* ============================================================== */}
-            <div className="absolute inset-x-0 bottom-0 h-[520px] sm:h-[620px] pointer-events-none overflow-hidden z-0">
-              {/* Wide ambient base smoke glow extending directly down */}
+              {/* Much lighter cinematic overlay — background stays visible */}
+              <div className="absolute inset-0 bg-black/15" />
+
+              {/* Soft readability gradient */}
+              <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/35" />
+
+              {/* Subtle center glow — keeps the hero content separated */}
               <div
                 className="absolute inset-0"
                 style={{
                   background:
-                    "radial-gradient(ellipse 110% 95% at 50% 100%, rgba(220, 172, 146, 0.88) 0%, rgba(232, 196, 174, 0.72) 35%, rgba(244, 220, 204, 0.45) 65%, transparent 100%)",
+                    "radial-gradient(circle at 50% 42%, rgba(255,255,255,0.10) 0%, rgba(255,255,255,0.025) 28%, transparent 58%)",
                 }}
               />
 
-              {/* Billowing smoke cloud 1: Warm terracotta-cream mist under right hand/card */}
+              {/* Bottom BLACK VIGNETTE — replaces the old white smoky fade */}
               <div
-                className="absolute -bottom-16 right-[-5%] sm:right-[5%] w-[820px] h-[440px] rounded-full blur-[90px] sm:blur-[120px] opacity-95"
+                className="absolute inset-x-0 bottom-0 h-[30%]"
                 style={{
                   background:
-                    "radial-gradient(circle, rgba(210, 160, 134, 0.92) 0%, rgba(228, 190, 168, 0.68) 50%, transparent 80%)",
+                    "linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.08) 20%, rgba(0,0,0,0.42) 65%, #000000 100%)",
                 }}
               />
 
-              {/* Billowing smoke cloud 2: Soft dark cream mist under left stats and watermark */}
+              {/* Very subtle side vignette */}
               <div
-                className="absolute -bottom-20 left-[-5%] sm:left-[0%] w-[780px] h-[420px] rounded-full blur-[85px] sm:blur-[115px] opacity-90"
+                className="absolute inset-0 pointer-events-none"
                 style={{
                   background:
-                    "radial-gradient(circle, rgba(222, 178, 154, 0.9) 0%, rgba(236, 204, 186, 0.65) 55%, transparent 80%)",
-                }}
-              />
-
-              {/* Billowing smoke cloud 3: Deep warm peach-cream core smoke puff in center */}
-              <div
-                className="absolute bottom-[-20px] left-1/2 -translate-x-1/2 w-[740px] h-[340px] rounded-full blur-[75px] sm:blur-[105px] opacity-90"
-                style={{
-                  background:
-                    "radial-gradient(ellipse, rgba(206, 154, 128, 0.85) 0%, rgba(226, 188, 166, 0.58) 60%, transparent 85%)",
-                }}
-              />
-
-              {/* Wispy upper smoke tendrils rising up towards stats & Nexora text */}
-              <div
-                className="absolute bottom-[100px] left-[5%] w-[620px] h-[240px] rounded-full blur-[70px] opacity-65"
-                style={{
-                  background: "radial-gradient(circle, rgba(230, 195, 175, 0.75) 0%, transparent 75%)",
-                }}
-              />
-
-              {/* Wispy upper smoke tendrils rising up towards the card */}
-              <div
-                className="absolute bottom-[90px] right-[5%] w-[580px] h-[220px] rounded-full blur-[65px] opacity-70"
-                style={{
-                  background: "radial-gradient(circle, rgba(226, 188, 168, 0.8) 0%, transparent 75%)",
-                }}
-              />
-
-              {/* Atmospheric horizontal drifting mist overlay */}
-              <div
-                className="absolute bottom-0 inset-x-0 h-[280px] opacity-65 blur-[50px]"
-                style={{
-                  background:
-                    "linear-gradient(90deg, rgba(235, 205, 190, 0.45) 0%, rgba(224, 188, 168, 0.75) 25%, rgba(212, 172, 148, 0.85) 50%, rgba(228, 198, 182, 0.75) 75%, rgba(235, 205, 190, 0.45) 100%)",
+                    "radial-gradient(ellipse at center, transparent 45%, rgba(0,0,0,0.22) 100%)",
                 }}
               />
             </div>
 
-            {/* Clearly visible Nexora Typography Watermark positioned above smoke */}
-            <div
-              className="absolute -bottom-8 sm:-bottom-8 left-4 sm:left-8 text-[140px] sm:text-[190px] md:text-[230px] font-bold tracking-tighter text-[#2a1a12]/[0.10] select-none pointer-events-none z-[2] font-sans leading-none"
-              aria-hidden="true"
-            >
-              Nexora
-            </div>
+            {/* ─────────────────────────────────────────────
+      HERO CONTENT
+  ───────────────────────────────────────────── */}
+            <div className="relative z-10 w-full max-w-6xl mx-auto flex flex-col items-center text-center pt-24 pb-36 sm:pt-28 sm:pb-40">
 
-            <div className="relative z-10 max-w-[1240px] mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-              {/* Left Column: Copy, Capsule Pill, Input Bar, Trust Social Proof */}
-              <div className="lg:col-span-6 xl:col-span-6 flex flex-col items-start pr-0 lg:pr-6">
-                {/* Badge Pill */}
-                <div className="flex flex-wrap items-center gap-3 mb-6">
-                  <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#f1e6dc]/80 border border-[#e5d4c5] text-[#6b584d] font-mono text-[12px] font-medium tracking-wide shadow-xs">
-                    <span className="w-2 h-2 rounded-full bg-[#006c48] animate-pulse" />
-                    Zero-Knowledge Verification
-                  </span>
-                </div>
+              {/* Premium eyebrow */}
+              <div
+                className="mb-7 inline-flex items-center gap-2 rounded-full px-3.5 py-1.5"
+                style={{
+                  background: "rgba(0,0,0,0.20)",
+                  border: "1px solid rgba(255,255,255,0.18)",
+                  backdropFilter: "blur(18px)",
+                  WebkitBackdropFilter: "blur(18px)",
+                  boxShadow:
+                    "0 8px 30px rgba(0,0,0,0.12), inset 0 1px 0 rgba(255,255,255,0.12)",
+                }}
+              >
+                <span className="relative flex h-1.5 w-1.5">
+                  <span
+                    className="absolute inline-flex h-full w-full animate-ping rounded-full opacity-60"
+                    style={{ background: "#ffffff" }}
+                  />
+                  <span
+                    className="relative inline-flex h-1.5 w-1.5 rounded-full"
+                    style={{ background: "#ffffff" }}
+                  />
+                </span>
 
-                {/* Reference styled Headline with inline interactive capsule badge */}
-                <h1 className="text-[44px] sm:text-[58px] md:text-[66px] lg:text-[72px] font-medium tracking-[-0.04em] text-[#241d1a] leading-[1.04] mb-6">
-                  The proof you
-                  <br className="hidden sm:inline" /> will trust
-                  {/* Inline Badge capsule matching Stitch reference */}
-                  <span className="inline-flex items-center align-middle ml-3 px-2.5 py-1.5 rounded-full bg-white/95 border border-[#e5dcd4] shadow-sm gap-1.5 -translate-y-1">
-                    <span className="w-6 h-6 rounded-full bg-[#2e2622] flex items-center justify-center text-white shadow-xs">
-                      <KeyRound size={13} />
-                    </span>
-                    <span className="w-6 h-6 rounded-full bg-[#eadecc] flex items-center justify-center text-[#5c4a3e]">
-                      <Shield size={13} />
-                    </span>
-                  </span>
-                </h1>
-
-                <p className="text-[17px] md:text-[19px] text-[#6e645e] leading-relaxed max-w-[520px] mb-8 font-normal">
-                  Zero-knowledge cryptographic cards and privacy verification. Prove claims instantly without
-                  exposing credentials.
-                </p>
-
-                {/* Action Buttons */}
-                <div className="flex flex-wrap items-center gap-3 sm:gap-4 mb-10">
-                  <Link
-                    href="/gate"
-                    className="group h-[48px] px-6 rounded-xl bg-[#2e2622] hover:bg-[#181311] text-white font-medium text-[15px] transition-all duration-200 flex items-center justify-center gap-2.5 shadow-[0_2px_12px_rgba(46,38,34,0.12)] hover:shadow-[0_4px_16px_rgba(46,38,34,0.22)] active:scale-[0.98]"
-                  >
-                    <span>Try the live demo</span>
-                    <ArrowRight size={15} className="transition-transform duration-200 group-hover:translate-x-0.5" />
-                  </Link>
-                  <Link
-                    href="/admin"
-                    className="h-[48px] px-6 rounded-xl bg-white/90 hover:bg-white text-[#2e2622] hover:text-[#181311] border border-[#e5d9ce] hover:border-[#cfc1b3] font-medium text-[15px] transition-all duration-200 flex items-center justify-center gap-2 shadow-[0_2px_8px_rgba(46,38,34,0.04)] hover:shadow-[0_4px_14px_rgba(46,38,34,0.08)] active:scale-[0.98]"
-                  >
-                    <span>Open operator console</span>
-                  </Link>
-                </div>
-
-                {/* Trust Metrics / Social Proof matching attached reference */}
-                <div className="flex items-center gap-6 sm:gap-8 pt-2">
-                  <div className="flex items-center gap-3">
-                    <div className="w-9 h-9 rounded-full bg-[#f1e7dd]/90 flex items-center justify-center text-[#55463c] shrink-0 border border-[#e5d7ca]/60 shadow-xs">
-                      <Users size={17} />
-                    </div>
-                    <div className="flex flex-col">
-                      <span className="text-[16px] font-semibold text-[#241d1a] leading-tight">70+</span>
-                      <span className="text-[12px] text-[#7c716a]">Verified preprod users</span>
-                    </div>
-                  </div>
-
-                  <div className="h-7 w-[1px] bg-[#e4dad0]" />
-
-                  <div className="flex items-center gap-3">
-                    <div className="w-9 h-9 rounded-full bg-[#f1e7dd]/90 flex items-center justify-center text-[#55463c] shrink-0 border border-[#e5d7ca]/60 shadow-xs">
-                      <Star size={17} className="fill-[#55463c]" />
-                    </div>
-                    <div className="flex flex-col">
-                      <span className="text-[16px] font-semibold text-[#241d1a] leading-tight">4.8+</span>
-                      <span className="text-[12px] text-[#7c716a]">Ratings on TP</span>
-                    </div>
-                  </div>
-                </div>
+                <span
+                  className="text-[11px] sm:text-xs font-medium tracking-[0.14em] uppercase"
+                  style={{ color: "rgba(255,255,255,0.82)" }}
+                >
+                  Privacy infrastructure, reimagined
+                </span>
               </div>
 
-              {/* Right Column: 3D Metallic Cryptographic Hardware Emblem */}
-              <div className="lg:col-span-6 xl:col-span-6 relative flex items-center justify-center lg:justify-end mt-6 lg:mt-0">
-                <div className="relative w-full max-w-[530px] sm:max-w-[600px] lg:max-w-[700px] flex items-center justify-center">
-                  {/* Radiant copper-amber studio backdrop glow */}
-                  <div
-                    className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[440px] sm:w-[560px] h-[440px] sm:h-[560px] rounded-full blur-[85px] sm:blur-[115px] pointer-events-none -z-0 opacity-85"
-                    style={{
-                      background:
-                        "radial-gradient(circle, rgba(224, 105, 30, 0.48) 0%, rgba(185, 75, 18, 0.28) 45%, rgba(145, 55, 12, 0.12) 70%, transparent 85%)",
-                    }}
-                  />
+              {/* ─────────────────────────────────────────────
+        MAIN HEADLINE
+    ───────────────────────────────────────────── */}
+              <h1
+                className="mx-auto w-full max-w-5xl text-center"
+                style={{
+                  fontFamily:
+                    'Manrope, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+                  fontSize: "clamp(2.4rem, 5vw, 4.75rem)",
+                  lineHeight: 1.04,
+                  fontWeight: 400,
+                  letterSpacing: "-0.05em",
+                  color: "#ffffff",
+                  textShadow: "0 3px 28px rgba(0,0,0,0.2)",
+                }}
+              >
+                <span className="block whitespace-nowrap">
+                  Prove what matters.
+                </span>
 
-                  {/* 3D Metallic Emblem Asset (Smooth 360° Horizontal Rotation) */}
-                  <div className="relative z-10 w-full flex items-center justify-center">
-                    <RotatingEmblem />
-                  </div>
-                </div>
+                <span
+                  className="block whitespace-nowrap"
+                  style={{ color: "rgba(255,255,255,0.58)" }}
+                >
+                  Reveal what’s necessary.
+                </span>
+              </h1>
+
+              {/* ─────────────────────────────────────────────
+        SUBTEXT
+    ───────────────────────────────────────────── */}
+              <p
+                className="mx-auto mt-8 w-full max-w-4xl px-4 text-center"
+                style={{
+                  fontSize: "clamp(0.95rem, 1.5vw, 1.1rem)",
+                  lineHeight: 1.6,
+                  fontWeight: 400,
+                  letterSpacing: "-0.01em",
+                  color: "rgba(255,255,255,0.76)",
+                  textShadow: "0 2px 16px rgba(0,0,0,0.35)",
+                }}
+              >
+                <span className="block whitespace-nowrap">
+                  Nexora turns credentials into privacy-preserving proofs, enabling secure verification
+                </span>
+                <span className="block whitespace-nowrap">
+                  of access, eligibility, and trust without exposing your identity.
+                </span>
+              </p>
+
+              {/* ─────────────────────────────────────────────
+        PREMIUM CTA
+    ───────────────────────────────────────────── */}
+              <div className="mt-10 flex flex-col sm:flex-row items-center gap-3">
+
+                {/* Primary CTA */}
+                <Link
+                  href="/gate"
+                  className="group relative inline-flex items-center gap-3 rounded-full px-5 py-2.5 transition-all duration-300 hover:-translate-y-0.5 active:scale-[0.98]"
+                  style={{
+                    background: "#ffffff",
+                    color: "#080808",
+                    boxShadow:
+                      "0 10px 40px rgba(0,0,0,0.25), 0 2px 8px rgba(0,0,0,0.15)",
+                    fontSize: "0.9rem",
+                    fontWeight: 600,
+                    letterSpacing: "-0.015em",
+                  }}
+                >
+                  <span>Experience Nexora</span>
+
+                  <span
+                    className="flex h-7 w-7 items-center justify-center rounded-full transition-transform duration-300 group-hover:translate-x-0.5"
+                    style={{
+                      background: "#0a0a0a",
+                      color: "#ffffff",
+                    }}
+                  >
+                    <svg
+                      width="13"
+                      height="13"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <path
+                        d="M2.5 7h9M7.5 3.5 11 7l-3.5 3.5"
+                        stroke="currentColor"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </Link>
+
+                {/* Secondary CTA */}
+                <Link
+                  href="#how-it-works"
+                  className="group inline-flex items-center gap-2 rounded-full px-5 py-3 transition-all duration-300 hover:-translate-y-0.5"
+                  style={{
+                    background: "rgba(0,0,0,0.18)",
+                    color: "rgba(255,255,255,0.9)",
+                    border: "1px solid rgba(255,255,255,0.18)",
+                    backdropFilter: "blur(18px)",
+                    WebkitBackdropFilter: "blur(18px)",
+                    fontSize: "0.9rem",
+                    fontWeight: 500,
+                    letterSpacing: "-0.01em",
+                  }}
+                >
+                  <span>See how it works</span>
+
+                  <svg
+                    width="13"
+                    height="13"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    className="opacity-60 transition-transform duration-300 group-hover:translate-y-0.5"
+                  >
+                    <path
+                      d="M7 2.5v8M3.5 7 7 10.5 10.5 7"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </Link>
+              </div>
+
+              {/* Tiny trust line */}
+              <div
+                className="mt-8 flex items-center gap-2 text-[11px] tracking-wide"
+                style={{
+                  color: "rgba(255,255,255,0.48)",
+                }}
+              >
+                <span>Zero-knowledge</span>
+                <span className="h-0.5 w-0.5 rounded-full bg-white/40" />
+                <span>Privacy-preserving</span>
+                <span className="h-0.5 w-0.5 rounded-full bg-white/40" />
+                <span>Built on Midnight</span>
               </div>
             </div>
           </section>
@@ -489,154 +546,282 @@ export function LandingPage() {
           </section>
 
           {/* ============================================================== */}
-          {/* SECTION: HOW IT WORKS (Three Steps, One Private Verification)  */}
+          {/* SECTION: HOW IT WORKS — Premium light editorial                 */}
           {/* ============================================================== */}
-          <section id="how-it-works" className="w-full py-20 px-4 sm:px-6 md:px-12 lg:px-16 bg-[#fcfbfa]">
-            <div className="max-w-[1240px] mx-auto">
-              <div className="mb-12">
-                <span className="font-mono text-[12px] text-[#5f5e5e] tracking-wider uppercase mb-2 block font-semibold">
-                  HOW IT WORKS
-                </span>
-                <h2 className="text-[32px] md:text-[38px] font-semibold text-[#1b1c1c] tracking-tight">
-                  Three steps. One private verification.
+          <section
+            id="how-it-works"
+            className="relative w-full overflow-hidden"
+            style={{ background: "#f8f7f5" }}
+          >
+            <div className="pointer-events-none absolute inset-0 overflow-hidden">
+              <div
+                className="absolute -top-40 left-1/4 h-[600px] w-[600px] rounded-full opacity-[0.18]"
+                style={{ background: "radial-gradient(circle, #c4b8ff 0%, transparent 70%)", filter: "blur(80px)" }}
+              />
+              <div
+                className="absolute top-1/2 right-0 h-[500px] w-[500px] -translate-y-1/2 rounded-full opacity-[0.14]"
+                style={{ background: "radial-gradient(circle, #6ee7b7 0%, transparent 70%)", filter: "blur(80px)" }}
+              />
+            </div>
+
+            <div className="relative z-10 mx-auto max-w-[1240px] px-6 py-28 lg:px-16">
+              <div className="mb-20">
+                <div
+                  className="mb-4 inline-flex items-center gap-2 rounded-full px-3 py-1 text-[11px] font-medium uppercase tracking-[0.15em]"
+                  style={{
+                    background: "rgba(124,111,255,0.08)",
+                    border: "1px solid rgba(124,111,255,0.22)",
+                    color: "#5b47e0",
+                    fontFamily: "var(--font-geist, Geist, monospace)",
+                  }}
+                >
+                  <span className="h-1.5 w-1.5 rounded-full bg-[#7c6fff] animate-pulse" />
+                  How it works
+                </div>
+                <h2
+                  className="max-w-2xl leading-[1.06] tracking-tight"
+                  style={{
+                    fontFamily: "var(--font-manrope, Manrope, sans-serif)",
+                    fontSize: "clamp(2rem, 4vw, 3.25rem)",
+                    fontWeight: 700,
+                    letterSpacing: "-0.04em",
+                    color: "#111118",
+                  }}
+                >
+                  Three steps.{" "}
+                  <span style={{ color: "rgba(17,17,24,0.38)" }}>
+                    One private verification.
+                  </span>
                 </h2>
               </div>
 
-              {/* Step Timeline Grid */}
-              <div className="relative grid grid-cols-1 md:grid-cols-3 gap-8">
-                {/* Connecting Line for Desktop */}
-                <div className="hidden md:block absolute top-[28px] left-[15%] right-[15%] h-[1px] bg-[#e4e2e2] z-0" />
+              <div className="relative grid grid-cols-1 gap-6 md:grid-cols-3">
+                <div
+                  className="absolute left-0 right-0 top-[52px] hidden h-px md:block"
+                  style={{
+                    background: "linear-gradient(90deg, transparent 0%, rgba(124,111,255,0.18) 20%, rgba(124,111,255,0.35) 50%, rgba(52,211,153,0.25) 80%, transparent 100%)",
+                  }}
+                />
 
-                {/* Step 01: Select */}
-                <div className="relative z-10 flex flex-col">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-10 h-10 rounded-xl bg-white border border-[#e4e2e2] flex items-center justify-center font-mono text-[14px] font-semibold text-[#1b1c1c] shadow-xs">
+                {/* Step 01 — Select */}
+                <div
+                  className="group relative flex flex-col rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1"
+                  style={{
+                    background: "#ffffff",
+                    border: "1px solid #e8e6f0",
+                    boxShadow: "0 2px 16px rgba(124,111,255,0.06), 0 1px 4px rgba(0,0,0,0.04)",
+                  }}
+                >
+                  <div className="mb-6 flex items-center gap-4">
+                    <div
+                      className="flex h-[52px] w-[52px] shrink-0 items-center justify-center rounded-xl text-sm font-bold"
+                      style={{
+                        background: "rgba(124,111,255,0.10)",
+                        border: "1px solid rgba(124,111,255,0.22)",
+                        color: "#5b47e0",
+                        fontFamily: "var(--font-geist, monospace)",
+                        letterSpacing: "0.04em",
+                      }}
+                    >
                       01
                     </div>
-                    <h3 className="text-[19px] font-semibold text-[#1b1c1c]">Select</h3>
+                    <h3
+                      className="text-xl font-semibold"
+                      style={{ fontFamily: "var(--font-manrope, Manrope, sans-serif)", letterSpacing: "-0.025em", color: "#111118" }}
+                    >
+                      Select
+                    </h3>
                   </div>
-
-                  <p className="text-[14px] text-[#5f5e5e] mb-6 leading-relaxed">
+                  <p className="mb-6 text-sm leading-relaxed" style={{ color: "#6b6880" }}>
                     Choose the credential requirement that needs to be verified without revealing peripheral attributes.
                   </p>
-
-                  <div className="bg-white border border-[#e4e2e2] rounded-2xl p-4 shadow-xs flex-1">
-                    <div className="text-[11px] font-mono uppercase tracking-wider text-[#5f5e5e] mb-3 font-semibold">
+                  <div className="flex-1 rounded-xl p-4" style={{ background: "#f5f3fb", border: "1px solid #e4e0f5" }}>
+                    <div
+                      className="mb-3 text-[10px] font-semibold uppercase tracking-[0.12em]"
+                      style={{ color: "#8b84a8", fontFamily: "var(--font-geist, monospace)" }}
+                    >
                       Target Schema
                     </div>
                     <div className="space-y-2">
-                      <label
-                        onClick={() => toggleSchema("income")}
-                        className="flex items-center gap-2.5 p-2.5 rounded-xl bg-[#f5f3f3] border border-[#e4e2e2]/60 cursor-pointer hover:bg-[#efece9] transition-colors"
-                      >
-                        <span
-                          className={`w-4 h-4 rounded flex items-center justify-center transition-colors ${selectedSchema.includes("income")
-                            ? "bg-[#1b1c1c] text-white"
-                            : "border border-[#a89b91] bg-white"
-                            }`}
+                      {[
+                        { id: "income", label: "Income >= $75,000" },
+                        { id: "jurisdiction", label: "Compliant Jurisdiction" },
+                      ].map(({ id, label }) => (
+                        <label
+                          key={id}
+                          onClick={() => toggleSchema(id)}
+                          className="flex cursor-pointer items-center gap-3 rounded-lg p-2.5 transition-colors"
+                          style={{
+                            background: selectedSchema.includes(id) ? "rgba(124,111,255,0.10)" : "#ffffff",
+                            border: `1px solid ${selectedSchema.includes(id) ? "rgba(124,111,255,0.28)" : "#e8e6f0"}`,
+                          }}
                         >
-                          {selectedSchema.includes("income") && <Check size={11} strokeWidth={3} />}
-                        </span>
-                        <span className="font-mono text-[12px] text-[#1b1c1c] font-medium">
-                          Income &gt;= $75,000
-                        </span>
-                      </label>
-
-                      <label
-                        onClick={() => toggleSchema("jurisdiction")}
-                        className="flex items-center gap-2.5 p-2.5 rounded-xl bg-[#f5f3f3] border border-[#e4e2e2]/60 cursor-pointer hover:bg-[#efece9] transition-colors"
-                      >
-                        <span
-                          className={`w-4 h-4 rounded flex items-center justify-center transition-colors ${selectedSchema.includes("jurisdiction")
-                            ? "bg-[#1b1c1c] text-white"
-                            : "border border-[#a89b91] bg-white"
-                            }`}
-                        >
-                          {selectedSchema.includes("jurisdiction") && <Check size={11} strokeWidth={3} />}
-                        </span>
-                        <span className="font-mono text-[12px] text-[#1b1c1c] font-medium">
-                          Compliant Jurisdiction
-                        </span>
-                      </label>
+                          <span
+                            className="flex h-4 w-4 shrink-0 items-center justify-center rounded"
+                            style={{
+                              background: selectedSchema.includes(id) ? "#7c6fff" : "#ffffff",
+                              border: `1px solid ${selectedSchema.includes(id) ? "#7c6fff" : "#d0ccee"}`,
+                            }}
+                          >
+                            {selectedSchema.includes(id) && <Check size={10} strokeWidth={3} color="#fff" />}
+                          </span>
+                          <span
+                            className="text-xs font-medium"
+                            style={{
+                              color: selectedSchema.includes(id) ? "#5b47e0" : "#6b6880",
+                              fontFamily: "var(--font-geist, monospace)",
+                            }}
+                          >
+                            {label}
+                          </span>
+                        </label>
+                      ))}
                     </div>
                   </div>
                 </div>
 
-                {/* Step 02: Prove */}
-                <div className="relative z-10 flex flex-col">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-10 h-10 rounded-xl bg-white border border-[#e4e2e2] flex items-center justify-center font-mono text-[14px] font-semibold text-[#1b1c1c] shadow-xs">
+                {/* Step 02 — Prove */}
+                <div
+                  className="group relative flex flex-col rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1"
+                  style={{
+                    background: "#ffffff",
+                    border: "1px solid #e8e6f0",
+                    boxShadow: "0 2px 20px rgba(124,111,255,0.10), 0 1px 4px rgba(0,0,0,0.04)",
+                  }}
+                >
+                  <div className="mb-6 flex items-center gap-4">
+                    <div
+                      className="flex h-[52px] w-[52px] shrink-0 items-center justify-center rounded-xl text-sm font-bold"
+                      style={{
+                        background: "rgba(124,111,255,0.12)",
+                        border: "1px solid rgba(124,111,255,0.28)",
+                        color: "#5b47e0",
+                        fontFamily: "var(--font-geist, monospace)",
+                        letterSpacing: "0.04em",
+                      }}
+                    >
                       02
                     </div>
-                    <h3 className="text-[19px] font-semibold text-[#1b1c1c]">Prove</h3>
+                    <h3
+                      className="text-xl font-semibold"
+                      style={{ fontFamily: "var(--font-manrope, Manrope, sans-serif)", letterSpacing: "-0.025em", color: "#111118" }}
+                    >
+                      Prove
+                    </h3>
                   </div>
-
-                  <p className="text-[14px] text-[#5f5e5e] mb-6 leading-relaxed">
+                  <p className="mb-6 text-sm leading-relaxed" style={{ color: "#6b6880" }}>
                     Generate a zero-knowledge proof locally inside your client runtime without exposing underlying identity details.
                   </p>
-
-                  <div className="bg-white border border-[#e4e2e2] rounded-2xl p-4 shadow-xs flex-1 flex flex-col justify-between">
-                    <div>
-                      <div className="flex items-center justify-between mb-3">
-                        <span className="text-[11px] font-mono uppercase tracking-wider text-[#5f5e5e] font-semibold">
-                          Client Cryptographic Execution
-                        </span>
-                        <button
-                          type="button"
-                          onClick={handleSimulateProve}
-                          disabled={isProving}
-                          className="text-[11px] font-mono text-[#006c48] hover:underline"
-                        >
-                          {isProving ? "Computing..." : "Run Circuit"}
-                        </button>
+                  {/* Terminal card intentionally stays dark — authentic contrast */}
+                  <div
+                    className="flex-1 rounded-xl overflow-hidden"
+                    style={{ background: "#1a1825", border: "1px solid rgba(124,111,255,0.22)" }}
+                  >
+                    <div
+                      className="flex items-center justify-between px-4 py-2.5"
+                      style={{ borderBottom: "1px solid rgba(255,255,255,0.07)", background: "rgba(255,255,255,0.03)" }}
+                    >
+                      <div className="flex items-center gap-1.5">
+                        <span className="h-2.5 w-2.5 rounded-full bg-[#ff5f57]" />
+                        <span className="h-2.5 w-2.5 rounded-full bg-[#ffbd2e]" />
+                        <span className="h-2.5 w-2.5 rounded-full bg-[#28ca41]" />
                       </div>
-
-                      <div className="bg-[#f5f3f3] rounded-xl p-3 font-mono text-[12px] text-[#5f5e5e] space-y-1.5 border border-[#e4e2e2]/60">
-                        <div className="text-[#1b1c1c] font-medium flex items-center justify-between">
-                          <span>Generating ZK-SNARK circuit...</span>
-                          <span className="text-[11px] text-[#006c48] font-bold">{proveProgress}%</span>
+                      <span
+                        className="text-[10px] font-medium tracking-wider"
+                        style={{ color: "rgba(255,255,255,0.35)", fontFamily: "var(--font-geist, monospace)" }}
+                      >
+                        zk-prover
+                      </span>
+                      <button
+                        type="button"
+                        onClick={handleSimulateProve}
+                        disabled={isProving}
+                        className="text-[10px] font-medium transition-colors"
+                        style={{
+                          color: isProving ? "rgba(52,211,153,0.5)" : "#34d399",
+                          fontFamily: "var(--font-geist, monospace)",
+                        }}
+                      >
+                        {isProving ? "computing…" : "▶ run"}
+                      </button>
+                    </div>
+                    <div className="p-4 space-y-3" style={{ fontFamily: "var(--font-geist, monospace)" }}>
+                      <div className="text-[11px]" style={{ color: "rgba(255,255,255,0.38)" }}>
+                        <span style={{ color: "#a89fff" }}>$</span> generate-zk-snark --circuit nexora
+                      </div>
+                      <div className="space-y-1.5">
+                        <div className="flex items-center justify-between text-[11px]">
+                          <span style={{ color: "rgba(255,255,255,0.52)" }}>Generating ZK-SNARK…</span>
+                          <span style={{ color: "#34d399", fontWeight: 600 }}>{proveProgress}%</span>
                         </div>
-                        <div className="w-full bg-[#e4e2e2] rounded-full h-1.5 overflow-hidden my-2">
+                        <div className="h-1 w-full overflow-hidden rounded-full" style={{ background: "rgba(255,255,255,0.10)" }}>
                           <div
-                            className="bg-[#19a974] h-full transition-all duration-200"
-                            style={{ width: `${proveProgress}%` }}
+                            className="h-full rounded-full transition-all duration-200"
+                            style={{ width: `${proveProgress}%`, background: "linear-gradient(90deg, #7c6fff, #34d399)" }}
                           />
                         </div>
-                        <div className="flex justify-between items-center text-[10px] text-[#5f5e5e]">
-                          <span>Proof ready:</span>
-                          <span className="text-[#1b1c1c] font-mono font-medium">0x7A82...92F</span>
-                        </div>
+                      </div>
+                      <div className="flex items-center justify-between text-[10px]">
+                        <span style={{ color: "rgba(255,255,255,0.32)" }}>Proof ready:</span>
+                        <span style={{ color: "#c4bcff" }}>0x7A82...92F</span>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                {/* Step 03: Verify */}
-                <div className="relative z-10 flex flex-col">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-10 h-10 rounded-xl bg-white border border-[#e4e2e2] flex items-center justify-center font-mono text-[14px] font-semibold text-[#1b1c1c] shadow-xs">
+                {/* Step 03 — Verify */}
+                <div
+                  className="group relative flex flex-col rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1"
+                  style={{
+                    background: "#ffffff",
+                    border: "1px solid #cef0e4",
+                    boxShadow: "0 2px 16px rgba(52,211,153,0.08), 0 1px 4px rgba(0,0,0,0.04)",
+                  }}
+                >
+                  <div className="mb-6 flex items-center gap-4">
+                    <div
+                      className="flex h-[52px] w-[52px] shrink-0 items-center justify-center rounded-xl text-sm font-bold"
+                      style={{
+                        background: "rgba(52,211,153,0.10)",
+                        border: "1px solid rgba(52,211,153,0.28)",
+                        color: "#0d9066",
+                        fontFamily: "var(--font-geist, monospace)",
+                        letterSpacing: "0.04em",
+                      }}
+                    >
                       03
                     </div>
-                    <h3 className="text-[19px] font-semibold text-[#1b1c1c]">Verify</h3>
+                    <h3
+                      className="text-xl font-semibold"
+                      style={{ fontFamily: "var(--font-manrope, Manrope, sans-serif)", letterSpacing: "-0.025em", color: "#111118" }}
+                    >
+                      Verify
+                    </h3>
                   </div>
-
-                  <p className="text-[14px] text-[#5f5e5e] mb-6 leading-relaxed">
+                  <p className="mb-6 text-sm leading-relaxed" style={{ color: "#6b6880" }}>
                     The verifier validates the cryptographic proof against consensus and receives only the verified boolean claim.
                   </p>
-
-                  <div className="bg-white border border-[#e4e2e2] rounded-2xl p-4 shadow-xs flex-1 flex flex-col justify-between">
-                    <div className="text-[11px] font-mono uppercase tracking-wider text-[#5f5e5e] mb-3 font-semibold">
+                  <div className="flex-1 rounded-xl p-4" style={{ background: "#f0fdf8", border: "1px solid #b6ecd8" }}>
+                    <div
+                      className="mb-3 text-[10px] font-semibold uppercase tracking-[0.12em]"
+                      style={{ color: "#2da87a", fontFamily: "var(--font-geist, monospace)" }}
+                    >
                       Consensus Output
                     </div>
-                    <div className="bg-[#96f6c2]/20 border border-[#19a974]/30 rounded-xl p-3.5 flex items-center gap-3">
-                      <CheckCircle2 size={22} className="text-[#006c48] shrink-0" />
+                    <div className="flex items-center gap-3 rounded-lg p-3" style={{ background: "#e6faf3", border: "1px solid #aae8cc" }}>
+                      <div
+                        className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full"
+                        style={{ background: "rgba(52,211,153,0.18)" }}
+                      >
+                        <CheckCircle2 size={18} style={{ color: "#0d9066" }} />
+                      </div>
                       <div>
-                        <span className="font-mono text-[13px] text-[#006c48] font-semibold block">
+                        <div className="text-sm font-semibold" style={{ color: "#0d9066", fontFamily: "var(--font-geist, monospace)" }}>
                           Valid Proof
-                        </span>
-                        <span className="text-[12px] text-[#006c48]/90">
+                        </div>
+                        <div className="text-[11px]" style={{ color: "#2da87a" }}>
                           Claim Satisfied · 100% Cryptographic Guarantee
-                        </span>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -646,97 +831,141 @@ export function LandingPage() {
           </section>
 
           {/* ============================================================== */}
-          {/* SECTION: INFRASTRUCTURE (Midnight Architecture Pipeline)       */}
+          {/* SECTION: INFRASTRUCTURE — Premium light pipeline                */}
           {/* ============================================================== */}
           <section
             id="infrastructure"
-            className="w-full py-20 px-4 sm:px-6 md:px-12 lg:px-16 bg-[#f5f3f3]/60 border-t border-[#e9e8e7]"
+            className="relative w-full overflow-hidden"
+            style={{ background: "#f2f0fb" }}
           >
-            <div className="max-w-[1240px] mx-auto">
-              <div className="mb-10">
-                <span className="font-mono text-[12px] text-[#5f5e5e] tracking-wider uppercase mb-2 block font-semibold">
-                  INFRASTRUCTURE
-                </span>
-                <h2 className="text-[30px] md:text-[34px] font-semibold text-[#1b1c1c] tracking-tight mb-3">
-                  Built for private computation.
-                </h2>
-                <p className="text-[16px] text-[#5f5e5e] leading-relaxed max-w-xl">
+            <div className="absolute inset-x-0 top-0 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(124,111,255,0.35), rgba(52,211,153,0.3), transparent)" }} />
+            <div className="pointer-events-none absolute inset-0">
+              <div
+                className="absolute bottom-0 left-1/2 h-[400px] w-[800px] -translate-x-1/2 opacity-[0.20]"
+                style={{ background: "radial-gradient(ellipse, #a5f3d8 0%, transparent 65%)", filter: "blur(60px)" }}
+              />
+            </div>
+
+            <div className="relative z-10 mx-auto max-w-[1240px] px-6 py-28 lg:px-16">
+              <div className="mb-20 flex flex-col items-start gap-6 lg:flex-row lg:items-end lg:justify-between">
+                <div>
+                  <div
+                    className="mb-4 inline-flex items-center gap-2 rounded-full px-3 py-1 text-[11px] font-medium uppercase tracking-[0.15em]"
+                    style={{
+                      background: "rgba(52,211,153,0.12)",
+                      border: "1px solid rgba(52,211,153,0.28)",
+                      color: "#0d9066",
+                      fontFamily: "var(--font-geist, monospace)",
+                    }}
+                  >
+                    <span className="h-1.5 w-1.5 rounded-full bg-[#34d399] animate-pulse" />
+                    Infrastructure
+                  </div>
+                  <h2
+                    className="max-w-2xl leading-[1.06] tracking-tight"
+                    style={{
+                      fontFamily: "var(--font-manrope, Manrope, sans-serif)",
+                      fontSize: "clamp(1.9rem, 3.5vw, 3rem)",
+                      fontWeight: 700,
+                      letterSpacing: "-0.04em",
+                      color: "#111118",
+                    }}
+                  >
+                    Built for{" "}
+                    <span style={{ color: "rgba(17,17,24,0.38)" }}>private computation.</span>
+                  </h2>
+                </div>
+                <p className="max-w-sm text-sm leading-relaxed lg:text-right" style={{ color: "#6b6880" }}>
                   Nexora is built on Midnight to enable privacy-preserving verification while keeping unnecessary information out of the verification flow.
                 </p>
               </div>
 
-              {/* Architecture Pipeline 4-layer cards */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 items-stretch">
-                {/* Node 1 */}
-                <div className="bg-white border border-[#e4e2e2] rounded-2xl p-5 shadow-xs flex flex-col justify-between">
-                  <div>
-                    <div className="font-mono text-[11px] text-[#5f5e5e] uppercase tracking-wider mb-2 font-semibold">
-                      Layer 01
+              <div className="relative">
+                <div
+                  className="absolute left-0 right-0 top-[66px] hidden h-px lg:block"
+                  style={{ background: "linear-gradient(90deg, rgba(124,111,255,0.4) 0%, rgba(52,211,153,0.4) 100%)" }}
+                />
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                  {[
+                    {
+                      layer: "01", title: "Nexora SDK",
+                      desc: "Client application & schema integration layer.",
+                      tag: "Browser / Edge",
+                      accent: "#5b47e0", accentBg: "rgba(124,111,255,0.08)", accentBorder: "rgba(124,111,255,0.22)",
+                      cardBg: "#ffffff", cardBorder: "#e4e0f5", highlight: false,
+                    },
+                    {
+                      layer: "02", title: "ZK Proof Generation",
+                      desc: "Client-side execution generating succinct zk-SNARKs.",
+                      tag: "Zero-Knowledge Circuit",
+                      accent: "#6b54f0", accentBg: "rgba(107,84,240,0.08)", accentBorder: "rgba(107,84,240,0.20)",
+                      cardBg: "#ffffff", cardBorder: "#e4e0f5", highlight: false,
+                    },
+                    {
+                      layer: "03", title: "Midnight Blockchain",
+                      desc: "Private smart contract execution & distributed state verification.",
+                      tag: "Consensus Engine",
+                      accent: "#0d9066", accentBg: "rgba(52,211,153,0.10)", accentBorder: "rgba(52,211,153,0.28)",
+                      cardBg: "#f0fdf8", cardBorder: "#b6ecd8", highlight: true,
+                    },
+                    {
+                      layer: "04", title: "Verified Claim",
+                      desc: "Boolean proof result received by relying party.",
+                      tag: "Satisfied Claim Only",
+                      accent: "#0d9066", accentBg: "rgba(52,211,153,0.08)", accentBorder: "rgba(52,211,153,0.20)",
+                      cardBg: "#ffffff", cardBorder: "#cef0e4", highlight: false,
+                    },
+                  ].map(({ layer, title, desc, tag, accent, accentBg, accentBorder, cardBg, cardBorder, highlight }) => (
+                    <div
+                      key={layer}
+                      className="group relative flex flex-col rounded-2xl p-5 transition-all duration-300 hover:-translate-y-1"
+                      style={{
+                        background: cardBg,
+                        border: `1px solid ${cardBorder}`,
+                        boxShadow: highlight
+                          ? "0 2px 20px rgba(52,211,153,0.12), 0 1px 4px rgba(0,0,0,0.04)"
+                          : "0 2px 12px rgba(124,111,255,0.06), 0 1px 4px rgba(0,0,0,0.03)",
+                      }}
+                    >
+                      <div className="mb-5 flex items-center gap-3">
+                        <div
+                          className="flex h-[52px] w-[52px] shrink-0 items-center justify-center rounded-xl text-xs font-bold tracking-wider"
+                          style={{ background: accentBg, border: `1px solid ${accentBorder}`, color: accent, fontFamily: "var(--font-geist, monospace)" }}
+                        >
+                          {layer}
+                        </div>
+                        <div
+                          className="absolute -right-3 top-[52px] z-20 hidden h-6 w-6 -translate-y-1/2 items-center justify-center rounded-full lg:flex"
+                          style={{ background: "#f2f0fb", border: "1px solid #d8d4f0", color: "#9990c0", fontSize: "10px" }}
+                        >
+                          →
+                        </div>
+                      </div>
+                      <div
+                        className="mb-1 text-[15px] font-semibold"
+                        style={{ fontFamily: "var(--font-manrope, Manrope, sans-serif)", letterSpacing: "-0.02em", color: "#111118" }}
+                      >
+                        {title}
+                      </div>
+                      <p className="mb-5 text-[12px] leading-relaxed" style={{ color: "#6b6880" }}>{desc}</p>
+                      <div className="mt-auto">
+                        <span
+                          className="inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider"
+                          style={{ background: accentBg, border: `1px solid ${accentBorder}`, color: accent, fontFamily: "var(--font-geist, monospace)" }}
+                        >
+                          <span className="h-1.5 w-1.5 rounded-full" style={{ background: accent }} />
+                          {tag}
+                        </span>
+                      </div>
                     </div>
-                    <div className="text-[17px] font-semibold text-[#1b1c1c] mb-1.5">Nexora SDK</div>
-                    <p className="text-[13px] text-[#5f5e5e] mb-4">Client application &amp; schema integration layer.</p>
-                  </div>
-                  <div>
-                    <span className="inline-block font-mono text-[11px] text-[#5f5e5e] bg-[#f5f3f3] px-2.5 py-1 rounded-md border border-[#e4e2e2]/70">
-                      Browser / Edge
-                    </span>
-                  </div>
-                </div>
-
-                {/* Node 2 */}
-                <div className="bg-white border border-[#e4e2e2] rounded-2xl p-5 shadow-xs flex flex-col justify-between">
-                  <div>
-                    <div className="font-mono text-[11px] text-[#5f5e5e] uppercase tracking-wider mb-2 font-semibold">
-                      Layer 02
-                    </div>
-                    <div className="text-[17px] font-semibold text-[#1b1c1c] mb-1.5">ZK Proof Generation</div>
-                    <p className="text-[13px] text-[#5f5e5e] mb-4">
-                      Client-side execution generating succinct zk-SNARKs.
-                    </p>
-                  </div>
-                  <div>
-                    <span className="inline-block font-mono text-[11px] text-[#5f5e5e] bg-[#f5f3f3] px-2.5 py-1 rounded-md border border-[#e4e2e2]/70">
-                      Zero-Knowledge Circuit
-                    </span>
-                  </div>
-                </div>
-
-                {/* Node 3 (Midnight Core) */}
-                <div className="bg-white border border-[#19a974]/40 rounded-2xl p-5 shadow-xs relative flex flex-col justify-between ring-1 ring-[#19a974]/20">
-                  <div>
-                    <div className="font-mono text-[11px] text-[#006c48] uppercase tracking-wider mb-2 font-semibold">
-                      Layer 03
-                    </div>
-                    <div className="text-[17px] font-semibold text-[#1b1c1c] mb-1.5">Midnight Blockchain</div>
-                    <p className="text-[13px] text-[#5f5e5e] mb-4">
-                      Private smart contract execution &amp; distributed state verification.
-                    </p>
-                  </div>
-                  <div>
-                    <span className="inline-block font-mono text-[11px] text-[#006c48] bg-[#96f6c2]/35 px-2.5 py-1 rounded-md border border-[#19a974]/30">
-                      Consensus Engine
-                    </span>
-                  </div>
-                </div>
-
-                {/* Node 4 */}
-                <div className="bg-white border border-[#e4e2e2] rounded-2xl p-5 shadow-xs flex flex-col justify-between">
-                  <div>
-                    <div className="font-mono text-[11px] text-[#5f5e5e] uppercase tracking-wider mb-2 font-semibold">
-                      Layer 04
-                    </div>
-                    <div className="text-[17px] font-semibold text-[#1b1c1c] mb-1.5">Verified Claim</div>
-                    <p className="text-[13px] text-[#5f5e5e] mb-4">Boolean proof result received by relying party.</p>
-                  </div>
-                  <div>
-                    <span className="inline-block font-mono text-[11px] text-[#006c48] bg-[#96f6c2]/35 px-2.5 py-1 rounded-md border border-[#19a974]/30">
-                      Satisfied Claim Only
-                    </span>
-                  </div>
+                  ))}
                 </div>
               </div>
             </div>
           </section>
+
+
+
 
           {/* ============================================================== */}
           {/* SECTION: PRIVACY PRINCIPLE (Editorial Statement Block)         */}
